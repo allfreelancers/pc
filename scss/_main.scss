@@ -71,18 +71,15 @@ h2, h2.huge {
 }
 
 p {
-  font-size: 22px;
+  font-size: 20px;
+  line-height: 1.4;
   @media screen and (max-width: 520px) {
     font-size: 16px;
   }
 }
 
 .slides p + p {
-  margin-top: 20px;
-}
-
-a:hover {
-  color: $blue;
+  margin-top: 30px;
 }
 
 /* Bgs */
@@ -103,7 +100,7 @@ a:hover {
   background-position: center bottom;
 }
 
-/* Layout */
+/* Layout, grids */
 
 .panel.top {
   transform: translateY(0) !important;
@@ -124,15 +121,15 @@ a:hover {
       text-align: right;
       align-self: center;
       a {
+        opacity: 0.6;
         font-size: 20px;
-        color: $gray-light;
-        font-weight: bold;
         margin-left: 10px;
-        &.active {
-          color: $black;
-        }
         &:hover {
-          color: $blue;
+          opacity: 1;
+        }
+        &.active {
+          opacity: 1;
+          font-weight: 500;
         }
       }
     }
@@ -143,6 +140,13 @@ section.slide .content {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
+
+  .container .wrap {
+    @media screen and (max-width: 767px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
 }
 
 .grid-ladder {
@@ -151,14 +155,20 @@ section.slide .content {
     margin-top: 120px;
   }
   .box-79 {
-    background-color: $bg-white-trans;
+    @extend .card-main;
+    @extend .padding-0;
     margin-bottom: 40px;
-    box-shadow: $box-shadow;
-    .title-79 {
-      text-transform: none;
-      letter-spacing: 0;
-
-      font-weight: 500;
+    max-width: 360px;
+    max-height: 220px;
+    .name-79 {
+      padding-right: 0;
+      padding-left: 0;
+      .title-79 {
+        text-transform: none;
+        letter-spacing: -.5px;
+        font-size: 18px;
+        font-weight: 500;
+      }
     }
     &:hover, &:focus, &:active {
       box-shadow: $box-shadow-xs;
@@ -175,14 +185,18 @@ section.slide .content {
   }
 }
 
-.box-contact {
+.card-main {
   background-color: $bg-white-trans;
   box-shadow: $box-shadow;
   border-radius: 10px;
-  padding: 60px;
+  padding: 40px;
   @media screen and (max-width: 767px) {
-    padding: 15px;
+    padding: 20px;
   }
+}
+
+.box-contact {
+  @extend .card-main;
   .box-contact-address {
     padding-left: 50px;
     p {
@@ -205,21 +219,18 @@ section.slide .content {
   }
 
   .side .navigation li {
-    font-size: 14px;
-    //font-weight: 300;
-    opacity: 0.5;
-    transition: 0.35s;
+    opacity: 0.6;
+    transition: 0.25s;
     text-align: right;
     color: $black;
   }
   .side .navigation li:hover {
     opacity: 1;
-    color: $blue;
   }
 
   .side .navigation li.selected {
     opacity: 1;
-    font-weight: bold;
+    font-weight: 500;
   }
 }
 
