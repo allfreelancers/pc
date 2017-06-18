@@ -13,20 +13,9 @@
     <script src="js/main.js" type="text/javascript"></script>
 
 
-    <style>
-        /* TODO REFACTOR THIS */
-        body {
-            opacity: 0;
-            transition: opacity .75s;
-            will-change: opacity;
-        }
-        html.page-loaded body {
-             opacity: 1;
-         }
-    </style>
 </head>
 
-<body class="slides scroll simplifiedMobile animateOnScroll content-narrow">
+<body class="slides scroll simplifiedMobile animateOnScroll">
 
 <!-- SVG Library -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -185,14 +174,14 @@
 
 <!-- Header -->
 <nav class="panel top">
-    <div class="panel-inner">
-        <div class="panel-inner-left">
-            <a href="./"><img src="img/pareto-logo.png" width="158" alt="Pareto Capital"></a>
-        </div>
-        <div class="panel-inner-right">
-            <a href="#" class="active">EN</a>
-            <a href="#">RU</a>
-            <a href="#">HE</a>
+    <div class="fix-12-12">
+        <div class="sections">
+            <div class="left"><a href="./"><img src="img/pareto-logo.png" width="240" alt="Pareto Capital"></a></div>
+            <div class="right">
+                <a href="#" class="active">EN</a>
+                <a href="#">RU</a>
+                <a href="#">HE</a>
+            </div>
         </div>
     </div>
 </nav>
@@ -201,82 +190,86 @@
 <section class="slide whiteSlide autoHeight" data-name="solutions">
     <div class="content">
         <div class="container">
-            <div class="wrap top left">
+            <div class="wrap top left padding-bottom-0">
 
+                <div class="fix-12-12">
 
-                <h1 class="punch-line">
-                    <span class="punch-line-static">We know how to</span> <span
-                        class="punch-line-typed text-primary"></span>
-                </h1>
-                <div class="fix-6-12 toLeft">
-                    <h2 class="text-gray-light semiBold">Public Relations & Media Marketing
-                        Solutions</h2>
-                </div>
+                    <h1 class="punch-line">
+                        <span class="punch-line-static">We know how to</span> <span
+                            class="punch-line-typed text-primary"></span>
+                    </h1>
 
-                <div class="ae-6 fromBottom">
+                    <div class="fix-6-12 toLeft">
+                        <h2 class="text-gray-light semiBold">Public Relations & Media Marketing
+                            Solutions</h2>
+                    </div>
 
-                    <ul class="grid later grid-ladder fromBottom">
-                        <li class="col-4-12 left">
-                            <a href="media-relations.html" class="box-79">
-                                <div class="name-79 table wide">
-                                    <div class="cell">
-                                        <img src="img/icon-service-pr.svg" width="100">
-                                        <div class="title-79">Media Relations</div>
+                    <div class="ae-6 fromBottom">
+
+                        <ul class="grid later grid-ladder equal">
+                            <li class="col-4-12">
+                                <a href="media-relations.html" class="box-79 equalElement">
+                                    <div class="name-79 table wide">
+                                        <div class="cell">
+                                            <img src="img/icon-service-pr.svg" width="100">
+                                            <div class="title-79">Media Relations</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="col-4-12 left">
-                            <a href="media-relations.html" class="box-79">
-                                <div class="name-79 table wide">
-                                    <div class="cell">
-                                        <img src="img/icon-service-socials.svg" width="100">
-                                        <div class="title-79">Social Media Marketing</div>
+                                </a>
+                            </li>
+                            <li class="col-4-12">
+                                <a href="media-relations.html" class="box-79 equalElement">
+                                    <div class="name-79 table wide">
+                                        <div class="cell">
+                                            <img src="img/icon-service-socials.svg" width="100">
+                                            <div class="title-79">Social Media Marketing</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="col-4-12 left">
-                            <a href="media-relations.html" class="box-79">
-                                <div class="name-79 table wide">
-                                    <div class="cell">
-                                        <img src="img/icon-service-events.svg" width="90">
-                                        <div class="title-79">Events</div>
+                                </a>
+                            </li>
+                            <li class="col-4-12">
+                                <a href="media-relations.html" class="box-79 equalElement">
+                                    <div class="name-79 table wide">
+                                        <div class="cell">
+                                            <img src="img/icon-service-events.svg" width="90">
+                                            <div class="title-79">Events</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="col-4-12 left">
-                            <a href="media-relations.html" class="box-79">
-                                <div class="name-79 table wide">
-                                    <div class="cell">
-                                        <img src="img/icon-service-surveys.svg" width="65">
-                                        <div class="title-79">Marketing Surveys</div>
+                                </a>
+                            </li>
+                            <li class="col-4-12">
+                                <a href="media-relations.html" class="box-79 equalElement">
+                                    <div class="name-79 table wide">
+                                        <div class="cell">
+                                            <img src="img/icon-service-surveys.svg" width="65">
+                                            <div class="title-79">Marketing Surveys</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="col-4-12 left">
-                            <a href="media-relations.html" class="box-79">
-                                <div class="name-79 table wide">
-                                    <div class="cell">
-                                        <img src="img/icon-service-wom.svg" width="100">
-                                        <div class="title-79">WOM</div>
+                                </a>
+                            </li>
+                            <li class="col-4-12">
+                                <a href="media-relations.html" class="box-79 equalElement">
+                                    <div class="name-79 table wide">
+                                        <div class="cell">
+                                            <img src="img/icon-service-wom.svg" width="100">
+                                            <div class="title-79">WOM</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="col-4-12 left">
-                            <a href="media-relations.html" class="box-79">
-                                <div class="name-79 table wide">
-                                    <div class="cell">
-                                        <img src="img/icon-service-custom.svg" width="100">
-                                        <div class="title-79">Custom Solutions</div>
+                                </a>
+                            </li>
+                            <li class="col-4-12">
+                                <a href="media-relations.html" class="box-79 equalElement">
+                                    <div class="name-79 table wide">
+                                        <div class="cell">
+                                            <img src="img/icon-service-custom.svg" width="100">
+                                            <div class="title-79">Custom Solutions</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
 
                 </div>
 
@@ -288,144 +281,151 @@
 </section>
 
 <!-- About -->
-<section class="slide whiteSlide autoHeight" data-name="about">
+<section class="slide whiteSlide autoHeight transparent" data-name="about">
     <div class="content">
         <div class="container">
+            <div class="wrap left">
 
-            <div class="wrap top padding-top-5">
-                <h2 class="text-gray-light semiBold margin-bottom-4 huge left">About us</h2>
-                <div class="grid left">
-                    <div class="col-6-12 ">
-                        <div class="card-main ae-5">
-                            <p>PR&nbsp;agency &ldquo;Pareto Capital 80/20&nbsp;Ltd. Israel&rdquo; provides specialized
-                                services to&nbsp;the
-                                Russian-speaking
-                                community in&nbsp;Israel. Our top specialists have over 10&nbsp;years of&nbsp;experience
-                                in&nbsp;the
-                                field.</p>
-                            <p>Our customers can confirm that we&nbsp;are reliable and competent specialists possessing
-                                in-depth
-                                knowledge of&nbsp;the market intricacies and the necessary skills to&nbsp;achieve
-                                success.</p>
-                            <p>We&nbsp;have been successfully developing and implementing marketing strategies for
-                                Israeli
-                                and
-                                international companies and brands. We&nbsp;work with audiences using our long-term
-                                contacts
-                                and
-                                connections with the leading mass media outlets, journalists and bloggers.</p>
+                <div class="fix-12-12">
+                    <h2 class="text-gray-light semiBold margin-bottom-3 huge left">About us</h2>
+                    <div class="grid">
+                        <div class="col-6-12">
+                            <div class="card-main card-main-mob ae-5">
+                                <p>PR&nbsp;agency &ldquo;Pareto Capital 80/20&nbsp;Ltd. Israel&rdquo; provides
+                                    specialized
+                                    services to&nbsp;the
+                                    Russian-speaking
+                                    community in&nbsp;Israel. Our top specialists have over 10&nbsp;years of&nbsp;experience
+                                    in&nbsp;the
+                                    field.</p>
+                                <p>Our customers can confirm that we&nbsp;are reliable and competent specialists
+                                    possessing
+                                    in-depth
+                                    knowledge of&nbsp;the market intricacies and the necessary skills to&nbsp;achieve
+                                    success.</p>
+                                <p class="cropBottom">We&nbsp;have been successfully developing and implementing
+                                    marketing strategies for
+                                    Israeli
+                                    and
+                                    international companies and brands. We&nbsp;work with audiences using our long-term
+                                    contacts
+                                    and
+                                    connections with the leading mass media outlets, journalists and bloggers.</p>
+                            </div>
+                            <div class="margin-bottom-4 hideForDesktop">&nbsp;</div>
+                        </div>
+                        <div class="col-6-12">
+                            <ul class="grid grid-68 equal later tintLogos">
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-3">
+                                        <div class="cell">
+                                            <img width="89" src="img/bbc.png" alt="BBC"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-4">
+                                        <div class="cell">
+                                            <img width="115" src="img/google.png" alt="Google"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-5">
+                                        <div class="cell">
+                                            <img width="42" src="img/apple.png" alt="Apple"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-6">
+                                        <div class="cell">
+                                            <img width="124" src="img/canon.png" alt="Canon"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-7">
+                                        <div class="cell">
+                                            <img width="83" src="img/nike.png" alt="Nike"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-8">
+                                        <div class="cell">
+                                            <img width="153" src="img/greenpeace.png" alt="Green Peace"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-9">
+                                        <div class="cell">
+                                            <img width="125" src="img/facebook.png" alt="Facebook"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-10">
+                                        <div class="cell">
+                                            <img width="155" src="img/microsoft.png" alt="Microsoft"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-10">
+                                        <div class="cell">
+                                            <img width="85" src="img/audi.png" alt="Audi"/>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-6-12">
-                        <ul class="grid grid-68 equal later tintLogos">
-                            <li class="col-6-12">
-                                <div class="table wide equalElement ae-3">
-                                    <div class="cell">
-                                        <img width="89" src="img/bbc.png" alt="BBC"/>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-6-12">
-                                <div class="table wide equalElement ae-4">
-                                    <div class="cell">
-                                        <img width="115" src="img/google.png" alt="Google"/>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-6-12">
-                                <div class="table wide equalElement ae-5">
-                                    <div class="cell">
-                                        <img width="42" src="img/apple.png" alt="Apple"/>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-6-12">
-                                <div class="table wide equalElement ae-6">
-                                    <div class="cell">
-                                        <img width="124" src="img/canon.png" alt="Canon"/>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-6-12">
-                                <div class="table wide equalElement ae-7">
-                                    <div class="cell">
-                                        <img width="83" src="img/nike.png" alt="Nike"/>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-6-12">
-                                <div class="table wide equalElement ae-8">
-                                    <div class="cell">
-                                        <img width="153" src="img/greenpeace.png" alt="Green Peace"/>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-6-12">
-                                <div class="table wide equalElement ae-9">
-                                    <div class="cell">
-                                        <img width="125" src="img/facebook.png" alt="Facebook"/>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-6-12">
-                                <div class="table wide equalElement ae-10">
-                                    <div class="cell">
-                                        <img width="155" src="img/microsoft.png" alt="Microsoft"/>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-6-12">
-                                <div class="table wide equalElement ae-10">
-                                    <div class="cell">
-                                        <img width="85" src="img/audi.png" alt="Audi"/>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </section>
 
 <!-- Contact -->
-<section class="slide whiteSlide autoHeight" data-name="contact">
+<section class="slide whiteSlide autoHeight transparent" data-name="contact">
     <div class="content">
         <div class="container">
-            <div class="wrap top padding-top-5 padding-bottom-2">
+            <div class="wrap">
 
-                <h2 class="text-gray-light semiBold margin-bottom-4 huge left">Contact us</h2>
+                <div class="fix-12-12">
+                    <h2 class="text-gray-light semiBold margin-bottom-3 huge left">Contact us</h2>
+                    <div class="box-contact card-main-mob ae-5">
+                        <div class="grid left">
+                            <div class="col-7-12">
+                                <form action="#" autocomplete="off" class="wide">
+                                    <input class="wide" id="name" type="text" name="name" placeholder="Name" required/>
+                                    <input class="wide" id="email" type="email" name="email" placeholder="Email"
+                                           required/>
+                                    <textarea class="stroke" id="message" type="text" name="message"
+                                              placeholder="Message"
+                                              maxlength="1000" rows="10" required></textarea>
+                                    <input class="button stroke wide indigo uppercase" type="submit" name="submit"
+                                           value="Send"/>
+                                </form>
+                            </div>
+                            <div class="col-5-12 box-contact-address">
+                                <p>Pareto Capital 80/20 Ltd.<br>
+                                    54 HaMasger St.<br>
+                                    POB 51406<br>
+                                    Tel Aviv 6721421<br>
+                                    Israel</p>
+                                <p>
+                                    1-800-212-212<br>
+                                    <a href="mailto:alina@paretocapital.net">alina@paretocapital.net</a>
+                                </p>
+                            </div>
+                        </div>
 
-                <div class="box-contact ae-5">
-                    <div class="grid left">
-                        <div class="col-7-12">
-                            <form action="#" autocomplete="off" class="wide">
-                                <input class="wide" id="name" type="text" name="name" placeholder="Name" required/>
-                                <input class="wide" id="email" type="email" name="email" placeholder="Email" required/>
-                                <textarea class="stroke" id="message" type="text" name="message" placeholder="Message"
-                                          maxlength="1000" rows="10" required></textarea>
-                                <input class="button cropBottom wide indigo uppercase" type="submit" name="submit"
-                                       value="Send"/>
-                            </form>
-                        </div>
-                        <div class="col-5-12 box-contact-address">
-                            <p>Pareto Capital 80/20 Ltd.<br>
-                                54 HaMasger St.<br>
-                                POB 51406<br>
-                                Tel Aviv 6721421<br>
-                                Israel</p>
-                            <p>
-                                1-800-212-212<br>
-                                <a href="mailto:alina@paretocapital.net">alina@paretocapital.net</a>
-                            </p>
-                        </div>
                     </div>
-
                 </div>
-
-                <p class="padding-top-5 micro">© 2017 Pareto Capital. All rights reserved</p>
 
             </div>
         </div>
@@ -433,15 +433,12 @@
     <div class="background background-bottom"></div>
 </section>
 
-<!-- Preloader -->
-<div class="loadingIcon">
-    <svg class="loading-icon" id="loading-circle" viewBox="0 0 18 18">
-        <circle class="circle" opacity=".1" stroke="#fff" stroke-width="2" stroke-miterlimit="10" cx="9" cy="9" r="8"
-                fill="none"></circle>
-        <circle class="dash" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="1,100"
-                cx="9" cy="9" r="8" fill="none"></circle>
-    </svg>
-</div>
+<!-- Footer -->
+<nav class="panel bottom">
+    <div class="sections">
+        <p class="center micro text-gray-dark">© 2017 Pareto Capital. All rights reserved</p>
+    </div>
+</nav>
 
 </body>
 </html>
