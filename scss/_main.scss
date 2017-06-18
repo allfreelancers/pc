@@ -1,7 +1,7 @@
 /* On load */
 body {
   opacity: 0;
-  transition: opacity .25s .25s;
+  transition: opacity .2s .2s;
   will-change: opacity;
 }
 
@@ -103,9 +103,10 @@ p {
 
 /* Bgs */
 
-body {
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%) !important;
+body.slides {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
+
 
 .background.background-top {
   background: url("../img/bg-top.svg") no-repeat;
