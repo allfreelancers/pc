@@ -1,0 +1,230 @@
+/* Colors */
+.text-primary {
+  color: $primary;
+}
+
+.text-gray-dark {
+  color: $gray-dark;
+}
+
+.text-gray-light {
+  color: $gray-light;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-black {
+  color: $black;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+/* Texts */
+
+.punch-line {
+  font-size: 64px;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  white-space: nowrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 520px) {
+    padding-bottom: 60px;
+  }
+
+  .typed-cursor {
+    color: $primary;
+    opacity: 1;
+    animation: blink 1s infinite;
+  }
+  @-webkit-keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  @media screen and (max-width: 520px) {
+    font-size: 34px;
+  }
+  @media screen and (max-width: 1024px) {
+    .punch-line-static {
+      display: block;
+    }
+  }
+}
+
+h2, h2.huge {
+  @media screen and (max-width: 520px) {
+    font-size: 26px;
+  }
+}
+
+p {
+  font-size: 22px;
+  @media screen and (max-width: 520px) {
+    font-size: 16px;
+  }
+}
+
+.slides p + p {
+  margin-top: 20px;
+}
+
+a:hover {
+  color: $blue;
+}
+
+/* Bgs */
+
+.background.background-top {
+  background: url("../img/bg-top.svg") no-repeat;
+  background-position: 65% 95%;
+  @media only screen and (min-width: 1024px) {
+    background-position: 55% 75%;
+  }
+  @media only screen and (min-width: 1800px) {
+    background-position: 60% 55%;
+  }
+}
+
+.background.background-bottom {
+  background: url("../img/bg-bottom.svg") no-repeat;
+  background-position: center bottom;
+}
+
+/* Layout */
+
+.panel.top {
+  transform: translateY(0) !important;
+  pointer-events: initial;
+  .panel-inner {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: calc(4% + 15px);
+    padding-left: calc(4% + 15px);
+    display: flex;
+    justify-content: space-between;
+    .panel-inner-left {
+      text-align: left;
+      align-self: center;
+    }
+    .panel-inner-right {
+      text-align: right;
+      align-self: center;
+      a {
+        font-size: 20px;
+        color: $gray-light;
+        font-weight: bold;
+        margin-left: 10px;
+        &.active {
+          color: $black;
+        }
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+section.slide .content {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.grid-ladder {
+  margin-top: 40px;
+  @media screen and (min-width: 520px) {
+    margin-top: 120px;
+  }
+  .box-79 {
+    background-color: $bg-white-trans;
+    margin-bottom: 40px;
+    box-shadow: $box-shadow;
+    .title-79 {
+      text-transform: none;
+      letter-spacing: 0;
+
+      font-weight: 500;
+    }
+    &:hover, &:focus, &:active {
+      box-shadow: $box-shadow-xs;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    li:nth-child(2) a.box-79, li:nth-child(5) a.box-79 {
+      top: -100px;
+    }
+    li:nth-child(3) a.box-79, li:nth-child(6) a.box-79 {
+      top: -200px;
+    }
+  }
+}
+
+.box-contact {
+  background-color: $bg-white-trans;
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+  padding: 60px;
+  @media screen and (max-width: 767px) {
+    padding: 15px;
+  }
+  .box-contact-address {
+    padding-left: 50px;
+    p {
+      line-height: 2;
+    }
+    @media screen and (max-width: 1024px) {
+      padding-left: 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+  }
+}
+
+/* Navigations */
+
+@media screen and (min-width: 1200px) {
+  .side .navigation li:after,
+  .side .navigation li:before {
+    display: none;
+  }
+
+  .side .navigation li {
+    font-size: 14px;
+    //font-weight: 300;
+    opacity: 0.5;
+    transition: 0.35s;
+    text-align: right;
+    color: $black;
+  }
+  .side .navigation li:hover {
+    opacity: 1;
+    color: $blue;
+  }
+
+  .side .navigation li.selected {
+    opacity: 1;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .side .navigation {
+    display: none;
+  }
+}

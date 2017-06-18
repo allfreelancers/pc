@@ -6,11 +6,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <title>Pareto Capital</title>
     <link href="css/app.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="js/plugins.js" type="text/javascript" name="plugins"></script>
-    <script src="js/slides.js" type="text/javascript" name="main-scripts"></script>
-    <script src="js/main.js" type="text/javascript" name="custom-scripts"></script>
+    <script src="js/slides.min.js" type="text/javascript"></script>
+    <script src="js/typed.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
 </head>
 
 <body class="slides scroll simplifiedMobile animateOnScroll">
@@ -162,352 +162,259 @@
 <!-- Navigation -->
 <nav class="side">
     <div class="navigation">
-        <ul></ul>
+        <ul>
+            <li data-title="Services"><span>Services</span></li>
+            <li data-title="About"><span>About</span></li>
+            <li data-title="Contact"><span>Contact</span></li>
+        </ul>
     </div>
 </nav>
 
 <!-- Header -->
-<nav class="panel top forceMobileView">
-    <div class="sections desktop">
-        <div class="left"><a href="#" title="Pareto Capital">
-            <img src="img/pareto-logo.png" width="158">
-        </a></div>
-        <div class="right">
-            <ul class="menu crop small bold">
-                <li><a href="#">EN</a></li>
-                <li><a href="#">RU</a></li>
-                <li><a href="#">HE</a></li>
-            </ul>
+<nav class="panel top">
+    <div class="panel-inner">
+        <div class="panel-inner-left">
+            <a href="#"><img src="img/pareto-logo.png" width="158" alt="Pareto Capital"></a>
         </div>
-    </div>
-</nav>
-
-<!-- Sidebar -->
-<nav class="sidebar deepPurple" data-sidebar-id="1">
-    <div class="close">
-        <svg>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
-        </svg>
-    </div>
-    <div class="content">
-        <a href="#" title="Brand Name" class="logo">
-            <svg width="120" height="50">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
-            </svg>
-        </a>
-        <ul class="mainMenu uppercase">
-            <li><a href="#">Tour</a></li>
-            <li><a href="#">Upgrade</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Explore</a></li>
-        </ul>
-        <ul class="subMenu">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Press & Media</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-        <ul class="social">
-            <li><a href="#">
-                <svg>
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
-                </svg>
-            </a></li>
-            <li><a href="#">
-                <svg>
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
-                </svg>
-            </a></li>
-            <li><a href="#">
-                <svg>
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#googlePlus"></use>
-                </svg>
-            </a></li>
-            <li><a href="#">
-                <svg>
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pinterest"></use>
-                </svg>
-            </a></li>
-        </ul>
+        <div class="panel-inner-right">
+            <a href="#" class="active">EN</a>
+            <a href="#">RU</a>
+            <a href="#">HE</a>
+        </div>
     </div>
 </nav>
 
 <!-- Services -->
-<section class="slide whiteSlide">
+<section class="slide whiteSlide autoHeight">
     <div class="content">
         <div class="container">
-            <div class="wrap">
+            <div class="wrap top left">
 
-                <div class="fix-12-12">
-                    <ul class="grid">
-                        <li class="col-12-12 left">
-                            <h1 class="ae-1">
-                                We know how to <span class="text-red">create a traction</span>
-                            </h1>
-                            <div class="ae-2">
-                                <p class="margin-bottom-1">Problems with visual design can turn users off so quickly
-                                    that they never discover all the smart choices you made with navigation or
-                                    interaction&nbsp;design.</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="grid">
-                        <li class="col-4-12 left ae-3">
-                            <h3>Meet Quick</h3>
-                            <p class="small">I think it's really important to design things with a kind of
-                                personality.</p>
-                        </li>
-                        <li class="col-4-12 left ae-4">
-                            <h3>Better Interface</h3>
-                            <p class="small">Designers are very fickle. I never wanted to be a victim of that.</p>
-                        </li>
-                        <li class="col-4-12 left ae-5">
-                            <h3>Listen Your Mind</h3>
-                            <p class="small">The details are the very source of expression in architecture.</p>
-                        </li>
-                    </ul>
+
+                <h1 class="punch-line">
+                    <span class="punch-line-static">We know how to</span> <span
+                        class="punch-line-typed text-primary"></span>
+                </h1>
+                <div class="fix-6-12 toLeft">
+                    <h2 class="text-gray-light semiBold">Public Relations & Media Marketing
+                        Solutions</h2>
                 </div>
+
+                <div class="ae-6 fromBottom">
+
+                    <ul class="grid later grid-ladder fromBottom">
+                        <li class="col-4-12 left">
+                            <a href="#" class="box-79">
+                                <div class="name-79 table wide">
+                                    <div class="cell">
+                                        <img src="img/icon-service1.svg" width="100">
+                                        <div class="title-79">Media Relations</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-4-12 left">
+                            <a href="#" class="box-79">
+                                <div class="name-79 table wide">
+                                    <div class="cell">
+                                        <img src="img/icon-service1.svg" width="100">
+                                        <div class="title-79">Social Media Marketing</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-4-12 left">
+                            <a href="#" class="box-79">
+                                <div class="name-79 table wide">
+                                    <div class="cell">
+                                        <img src="img/icon-service1.svg" width="100">
+                                        <div class="title-79">Events</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-4-12 left">
+                            <a href="#" class="box-79">
+                                <div class="name-79 table wide">
+                                    <div class="cell">
+                                        <img src="img/icon-service1.svg" width="100">
+                                        <div class="title-79">Marketing Surveys</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-4-12 left">
+                            <a href="#" class="box-79">
+                                <div class="name-79 table wide">
+                                    <div class="cell">
+                                        <img src="img/icon-service1.svg" width="100">
+                                        <div class="title-79">WOM</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-4-12 left">
+                            <a href="#" class="box-79">
+                                <div class="name-79 table wide">
+                                    <div class="cell">
+                                        <img src="img/icon-service1.svg" width="100">
+                                        <div class="title-79">Custom Solutions</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
 
             </div>
         </div>
     </div>
+    <div class="background background-top"></div>
 </section>
 
 <!-- About -->
-<section class="slide whiteSlide">
+<section class="slide whiteSlide autoHeight">
     <div class="content">
         <div class="container">
-            <div class="wrap">
 
-                <div class="fix-10-12 toCenter">
-                    <h1 class="ae-1">Our clients</h1>
-                    <div class="ae-2"><p>Design is all around us, in our homes, in buildings, architecture, landscaping,
-                        products, movies, television, and much more.</p></div>
-                </div>
-                <div class="fix-12-12">
-                    <!-- remove class tintLogos to disable color change of logo images -->
-                    <ul class="grid grid-68 tintLogos equal later">
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-3">
-                                <div class="cell">
-                                    <img width="89" src="assets/img/bbc.png" alt="BBC"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-4">
-                                <div class="cell">
-                                    <img width="115" src="assets/img/google.png" alt="Google"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-5">
-                                <div class="cell">
-                                    <img width="42" src="assets/img/apple.png" alt="Apple"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-6">
-                                <div class="cell">
-                                    <img width="124" src="assets/img/canon.png" alt="Canon"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-7">
-                                <div class="cell">
-                                    <img width="83" src="assets/img/nike.png" alt="Nike"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-8">
-                                <div class="cell">
-                                    <img width="153" src="assets/img/greenpeace.png" alt="Green Peace"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-3">
-                                <div class="cell">
-                                    <img width="125" src="assets/img/facebook.png" alt="Facebook"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-4">
-                                <div class="cell">
-                                    <img width="85" src="assets/img/audi.png" alt="Audi"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-5">
-                                <div class="cell">
-                                    <img width="52" src="assets/img/warner-bros.png" alt="Warner Bros"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-6">
-                                <div class="cell">
-                                    <img width="155" src="assets/img/microsoft.png" alt="Microsoft"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-7">
-                                <div class="cell">
-                                    <img width="116" src="assets/img/coca-cola.png" alt="Coca Cola"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-8">
-                                <div class="cell">
-                                    <img width="133" src="assets/img/reebok.png" alt="Reebok"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-3">
-                                <div class="cell">
-                                    <img width="67" src="assets/img/adidas.png" alt="Adidas"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-4">
-                                <div class="cell">
-                                    <img width="116" src="assets/img/vimeo.png" alt="Vimeo"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-5">
-                                <div class="cell">
-                                    <img width="74" src="assets/img/nbc.png" alt="NBC"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-6">
-                                <div class="cell">
-                                    <img width="127" src="assets/img/sony.png" alt="Sony"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-7">
-                                <div class="cell">
-                                    <img width="65" src="assets/img/playstation.png" alt="PlayStation"/>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-2-12">
-                            <div class="table wide equalElement ae-8">
-                                <div class="cell">
-                                    <img width="125" src="assets/img/national-geographic.png"
-                                         alt="National Geographic"/>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+            <div class="wrap top padding-top-5">
+                <h2 class="text-gray-light semiBold margin-bottom-4 huge left">About us</h2>
+                <div class="grid left">
+                    <div class="col-6-12">
+                        <p>PR&nbsp;agency &ldquo;Pareto Capital 80/20&nbsp;Ltd. Israel&rdquo; provides specialized
+                            services to&nbsp;the
+                            Russian-speaking
+                            community in&nbsp;Israel. Our top specialists have over 10&nbsp;years of&nbsp;experience in&nbsp;the
+                            field.</p>
+                        <p>Our customers can confirm that we&nbsp;are reliable and competent specialists possessing
+                            in-depth
+                            knowledge of&nbsp;the market intricacies and the necessary skills to&nbsp;achieve
+                            success.</p>
+                        <p>We&nbsp;have been successfully developing and implementing marketing strategies for Israeli
+                            and
+                            international companies and brands. We&nbsp;work with audiences using our long-term contacts
+                            and
+                            connections with the leading mass media outlets, journalists and bloggers.</p>
+                    </div>
+                    <div class="col-6-12">
 
+                        <ul class="grid grid-68 equal later tintLogos">
+                            <li class="col-6-12">
+                                <div class="table wide equalElement ae-3">
+                                    <div class="cell">
+                                        <img width="89" src="img/bbc.png" alt="BBC"/>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-6-12">
+                                <div class="table wide equalElement ae-4">
+                                    <div class="cell">
+                                        <img width="115" src="img/google.png" alt="Google"/>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-6-12">
+                                <div class="table wide equalElement ae-5">
+                                    <div class="cell">
+                                        <img width="42" src="img/apple.png" alt="Apple"/>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-6-12">
+                                <div class="table wide equalElement ae-6">
+                                    <div class="cell">
+                                        <img width="124" src="img/canon.png" alt="Canon"/>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-6-12">
+                                <div class="table wide equalElement ae-7">
+                                    <div class="cell">
+                                        <img width="83" src="img/nike.png" alt="Nike"/>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-6-12">
+                                <div class="table wide equalElement ae-8">
+                                    <div class="cell">
+                                        <img width="153" src="img/greenpeace.png" alt="Green Peace"/>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-6-12">
+                                <div class="table wide equalElement ae-9">
+                                    <div class="cell">
+                                        <img width="125" src="img/facebook.png" alt="Facebook"/>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-6-12">
+                                <div class="table wide equalElement ae-10">
+                                    <div class="cell">
+                                        <img width="155" src="img/microsoft.png" alt="Microsoft"/>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-6-12">
+                                <div class="table wide equalElement ae-10">
+                                    <div class="cell">
+                                        <img width="85" src="img/audi.png" alt="Audi"/>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 </section>
 
 <!-- Contact -->
-<section class="slide whiteSlide">
+<section class="slide whiteSlide autoHeight">
     <div class="content">
         <div class="container">
-            <div class="wrap">
+            <div class="wrap top padding-top-5 padding-bottom-2">
 
-                <h1 class="ae-1">Sign In</h1>
-                <div class="fix-5-12 margin-top-3 center">
-                    <div class="pad shadow selected ae-3">
-                        <form action="#" autocomplete="on" class="wide">
-                            <div class="label ae-3 cropTop"><label class="cropTop opacity-5" for="email43">Email
-                                address</label></div>
-                            <input class="wide ae-4 center" id="email43" type="email" name="email"
-                                   placeholder="Email address" required/>
-                            <div class="label ae-5"><label class="opacity-5" for="password43">Password</label></div>
-                            <input class="wide ae-6 center" id="password43" type="password" name="password"
-                                   placeholder="Password" required/>
-                            <div class="ae-7">
-                                <p class="remind-43 micro opacity-5"><a href="#">Forgot your password?</a></p>
-                            </div>
-                            <input class="button cropBottom wide pink ae-9" type="submit" name="submit"
-                                   value="Sign in"/>
-                        </form>
+                <h2 class="text-gray-light semiBold margin-bottom-4 huge left">Contact us</h2>
+
+                <div class="box-contact">
+                    <div class="grid left">
+                        <div class="col-7-12">
+                            <form action="#" autocomplete="off" class="wide">
+                                <input class="wide" id="name" type="text" name="name" placeholder="Name" required/>
+                                <input class="wide" id="email" type="email" name="email" placeholder="Email" required/>
+                                <textarea class="stroke" id="message" type="text" name="message" placeholder="Message"
+                                          maxlength="1000" rows="10" required></textarea>
+                                <input class="button cropBottom wide indigo uppercase" type="submit" name="submit"
+                                       value="Send"/>
+                            </form>
+                        </div>
+                        <div class="col-5-12 box-contact-address">
+                            <p>Pareto Capital 80/20 Ltd.<br>
+                                54 HaMasger St.<br>
+                                POB 51406<br>
+                                Tel Aviv 6721421<br>
+                                Israel</p>
+                            <p>
+                                1-800-212-212<br>
+                                <a href="mailto:alina@paretocapital.net">alina@paretocapital.net</a>
+                            </p>
+                        </div>
                     </div>
-                    <div class="ae-10"><p class="text-43 small opaque"><span
-                            class="opacity-5">Don’t have an account?</span><br><a href="#" class="bold">Create
-                        Account</a></p></div>
+
                 </div>
+
+                <p class="left padding-top-5 micro">© 2017 Pareto Capital. All rights reserved</p>
 
             </div>
         </div>
     </div>
+    <div class="background background-bottom"></div>
 </section>
-
-<!-- Panel Bottom #01 -->
-<nav class="panel bottom forceMobileView">
-    <div class="sections desktop">
-        <div class="left"><a href="#">Available
-            <svg>
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#apple"></use>
-            </svg>
-            iPhone</a></div>
-        <div class="center"><span class="nextSlide"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                              xlink:href="#arrow-down"></use></svg></span></div>
-        <div class="right"><span data-dropdown-id="2" class="button actionButton dropdownTrigger"><svg><use
-                xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use></svg></span></div>
-    </div>
-    <div class="sections compact hidden">
-        <div class="right"><span data-dropdown-id="2" class="button actionButton dropdownTrigger"><svg><use
-                xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use></svg></span></div>
-    </div>
-</nav>
-
-<!-- Share Window -->
-<div class="dropdown share bottom right" data-dropdown-id="2" data-text="Take a look at this"
-     data-url="https://designmodo.com"
-     data-pinterest-image="https://designmodo.com/wp-content/uploads/2015/10/Presentation.jpg">
-    <div class="title">Share</div>
-    <ul>
-        <li class="facebook">
-            <svg>
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fb-like"></use>
-            </svg>
-        </li>
-        <li class="twitter">
-            <svg>
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
-            </svg>
-        </li>
-        <li class="googlePlus">
-            <svg>
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#googlePlus"></use>
-            </svg>
-        </li>
-        <li class="pinterest">
-            <svg>
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pinterest"></use>
-            </svg>
-        </li>
-        <!-- li class="stumbleupon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stumbleupon"></use></svg></li>
-        <li class="linkedin"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use></svg></li -->
-        <li class="mail" data-subject="Subject" data-body="Body">share by email</li>
-    </ul>
-</div>
 
 <!-- Preloader -->
 <div class="loadingIcon">

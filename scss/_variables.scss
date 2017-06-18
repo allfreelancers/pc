@@ -1,8 +1,8 @@
 // FONTS
-$header-font: ('Helvetica Neue', Helvetica, Arial, sans-serif);
+$header-font: ('Roboto', Helvetica, Arial, sans-serif);
 $header-baseline: 0.1445;
 
-$body-font: ('Helvetica Neue', Helvetica, Arial, sans-serif);
+$body-font: ('Roboto', Helvetica, Arial, sans-serif);
 $body-baseline: 0.1445;
 
 $gh: 1rem;
@@ -55,16 +55,16 @@ $small-scale: 0.8;
 $large-scale: 1.2;
 
 
-/* Additional Fonts:
-.raleway {
-  font-family:Raleway, sans-serif !important;
-}
-.sourceSans {
-  font-family:"Source Sans Pro", sans-serif !important;
-}
-.playfair {
-  font-family:"Playfair Display", serif !important;
-}
-.georgia {
-  font-family:Georgia, serif !important;
-} */
+// Custom
+$black: #000;
+$gray-dark: #303030;
+$gray-light: #9E9E9E;
+$gray-lighter: #ddd;
+$white: #fff;
+$primary: #F36827;
+$blue: #3F51B5;
+
+$box-shadow: 0 35px 54px rgba(0, 0, 0, 0.3), 0 5px 20px rgba(0, 0, 0, 0.07), 0 0px 1px rgba(0, 0, 0, 0.12);
+$box-shadow-xs: 0 0 3px rgba(0, 0, 0, 0.2);
+
+$bg-white-trans: rgba(255, 255, 255, 0.9);
