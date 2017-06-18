@@ -7691,12 +7691,12 @@ p {
           opacity: 1;
           font-weight: 500; }
 
-section.slide .content {
+body.content-narrow section.slide .content {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto; }
   @media screen and (max-width: 767px) {
-    section.slide .content .container .wrap {
+    body.content-narrow section.slide .content .container .wrap {
       padding-right: 15px;
       padding-left: 15px; } }
 
@@ -7760,9 +7760,20 @@ section.slide .content {
   .side .navigation li:hover {
     opacity: 1; }
   .side .navigation li.selected {
-    opacity: 1;
-    font-weight: 500; } }
+    opacity: 1; } }
 
 @media screen and (max-width: 1199px) {
   .side .navigation {
     display: none; } }
+
+/* Lists */
+/* bullets */
+.circle li {
+  list-style-type: circle;
+  list-style-type: red; }
+
+.disc li {
+  list-style-type: disc; }
+
+.square li {
+  list-style-type: square; }

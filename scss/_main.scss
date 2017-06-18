@@ -136,7 +136,8 @@ p {
   }
 }
 
-section.slide .content {
+
+body.content-narrow section.slide .content {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -230,7 +231,6 @@ section.slide .content {
 
   .side .navigation li.selected {
     opacity: 1;
-    font-weight: 500;
   }
 }
 
@@ -238,4 +238,21 @@ section.slide .content {
   .side .navigation {
     display: none;
   }
+}
+
+
+/* Lists */
+
+/* bullets */
+.circle li {
+  list-style-type: circle;
+  list-style-type: red;
+}
+
+.disc li {
+  list-style-type: disc;
+}
+
+.square li {
+  list-style-type: square;
 }
