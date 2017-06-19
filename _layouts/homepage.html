@@ -75,7 +75,7 @@ layout: default
                                 <li class="col-6-12">
                                     <div class="table wide equalElement ae-3">
                                         <div class="cell sidebarTrigger" data-sidebar-id="client-dscr">
-                                            <img width="89" src="img/bbc.png" alt="BBC"/>
+                                            <img width="89" src="uploaded/bbc.png" alt="BBC"/>
                                         </div>
                                     </div>
                                 </li>
@@ -168,7 +168,8 @@ layout: default
                                 </form>
                             </div>
                             <div class="col-5-12 box-contact-address">
-                                <p>{{site.address}}<p>
+                                <p>{{site.address}}
+                                <p>
                                 <p>{{site.phone}}<br><a href="mailto:{{site.email}}">{{site.email}}</a></p>
                             </div>
                         </div>
@@ -182,40 +183,23 @@ layout: default
     <div class="background background-bottom"></div>
 </section>
 
-<!-- Sidebar Left -->
-<nav class="sidebar black left" data-sidebar-id="client-dscr">
+
+<!-- Client Description Sidebar -->
+{% assign clients = (site.clients | sort: 'date') %}
+{% for client in clients %}
+<div class="sidebar black left" data-sidebar-id="client-dscr-{{client.title}}">
     <div class="close">
         <svg>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
         </svg>
     </div>
     <div class="content">
-        <img class="block margin-top-3 margin-bottom-3" width="89" src="img/bbc.png" alt="BBC"/>
-        <p><a class="text-blue" href="//google.com" target="_blank">bbc.com</a></p>
-        <p>Our customers can confirm that we are reliable and competent specialists possessing in-depth
-            knowledge of
-            the market intricacies and the necessary skills to achieve success.
-        </p>
-        <p>We have been successfully developing and implementing marketing strategies for Israeli and
-            international
-            companies and brands. We work with audiences using our long-term contacts and connections with the leading
-            mass media outlets, journalists and bloggers.
-        </p>
-        <p>We have been successfully developing and implementing marketing strategies for Israeli and
-            international companies and brands.
-        </p>
-
-        <p>We have been successfully developing and implementing marketing strategies for Israeli and
-            international companies and brands. We work with audiences using our long-term contacts and connections with
-            the leading mass media outlets, journalists and bloggers.
-        </p>
-
-        <p>We have been successfully developing and implementing marketing strategies for Israeli and
-            international companies and brands. We work with audiences using our long-term contacts and connections with
-            the leading mass media outlets, journalists and bloggers.
-        </p>
+        <img class="block margin-top-3 margin-bottom-3" width="100" src="{{client.logo}}" alt="{{client.title}} Logo"/>
+        <p><a class="text-blue" href="{{client.site}}" target="_blank">{{client.title}}</a></p>
+        {{client.content}}
     </div>
-</nav>
+</div>
+{% endfor %}
 
 <!-- Navigation -->
 <nav class="side">

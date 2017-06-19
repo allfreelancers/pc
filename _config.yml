@@ -11,6 +11,13 @@ collections:
   uploads:
     title: Uploads
     output: true
+defaults:
+  - scope:
+      path: ''
+      type: clients
+    values:
+      Site:
+      Logo: ''
 description: Public Relations & Media Marketing Solutions
 baseurl: 
 url: "//fkolesnik.github.io/pc"
