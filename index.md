@@ -1,5 +1,6 @@
 ---
 title: About text
+position: 1
 layout: homepage
 ---
 
