@@ -1,5 +1,5 @@
 ---
-title: About text on the homepage
+title: About text
 layout: homepage
 ---
 
