@@ -1,5 +1,6 @@
 ---
 layout: homepage
+title: About
 ---
 
 PR&nbsp;agency &ldquo;Pareto Capital 80/20&nbsp;Ltd. Israel&rdquo; provides
