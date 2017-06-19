@@ -1,6 +1,6 @@
 ---
 title: Pareto Capital
-timezone: Jerusalem
+timezone: Asia/Jerusalem
 collections:
   posts:
     title: Posts
@@ -8,7 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: ''
+description: 
 baseurl: 
 url: "//fkolesnik.github.io/pc"
 email: alina@paretocapital.net
