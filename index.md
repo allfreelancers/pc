@@ -1,4 +1,5 @@
 ---
+title: About text on the homepage
 layout: homepage
 ---
 
