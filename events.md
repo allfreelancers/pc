@@ -1,7 +1,6 @@
 ---
 title: Events
 position: 3
-id: 3
 page_icon: "/img/icon-service-events.svg"
 layout: page
 ---

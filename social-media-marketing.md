@@ -1,7 +1,6 @@
 ---
 title: Social Media Marketing
 position: 2
-id: 2
 page_icon: "/img/icon-service-socials.svg"
 layout: page
 ---
