@@ -1,0 +1,27 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+
+    <meta name="description" content="{{ site.description | strip_html | normalize_whitespace }}">
+
+    <title>{% if page.title %}{{ page.title | strip_html | normalize_whitespace }} | {{site.title | strip_html |
+        normalize_whitespace}}{% else %}{{ site.title | strip_html | normalize_whitespace }}{% endif %}</title>
+
+    <link rel="icon" href="{{site.url}}{{site.baseurl}}/img/favicon.ico">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | strip_html }}"
+          href="{{site.url}}{{site.baseurl}}/feed.xml">
+
+    <link href="{{site.url}}{{site.baseurl}}/css/app.css" rel="stylesheet" type="text/css" />
+
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script src="{{site.url}}{{site.baseurl}}/js/slides.min.js"></script>
+    <script src="{{site.url}}{{site.baseurl}}/js/typed.min.js"></script>
+    <script src="{{site.url}}{{site.baseurl}}/js/main.js"></script>
+
+</head>
+
+

@@ -94,6 +94,10 @@ p {
   margin-top: 30px;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 .label-uppercase {
   font-size: 14px;
   color: $gray-light;
@@ -104,9 +108,8 @@ p {
 /* Bgs */
 
 body.slides {
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-color: #fbfbfb;
 }
-
 
 .background.background-top {
   background: url("../img/bg-top.svg") no-repeat;
@@ -119,8 +122,8 @@ body.slides {
 }
 
 .scroll .slide .background, .mobile .simplifiedMobile .slide .background {
-   //position: static !important;
-   min-height: inherit;
+  //position: static !important;
+  min-height: inherit;
 }
 
 /* Layout, grids */
@@ -143,7 +146,9 @@ body.slides {
 }
 
 .panel.bottom {
-  p {font-size: 14px;}
+  p {
+    font-size: 14px;
+  }
   @media screen and (max-width: 519px) {
     display: none !important;
   }
@@ -267,7 +272,6 @@ body.slides {
     font-size: 12px;
   }
 }
-
 
 /* Sidebars */
 .sidebar.left {

@@ -5,3 +5,7 @@ node_modules
 **/.DS_Store
 .sass-cache
 tmp
+_site
+.jekyll-metadata
+Gemfile
+Gemfile.lock

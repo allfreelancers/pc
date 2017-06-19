@@ -1,0 +1,229 @@
+---
+layout: default
+---
+
+<!-- Solutions -->
+<section class="slide whiteSlide autoHeight" data-name="solutions">
+    <div class="content">
+        <div class="container">
+            <div class="wrap top left padding-bottom-0">
+
+                <div class="fix-12-12">
+
+                    <h1 class="punch-line">
+                        <span class="punch-line-static">We know how to</span> <span
+                            class="punch-line-typed text-deepOrange"></span>
+                    </h1>
+
+                    <div class="fix-6-12 toLeft">
+                        <h2 class="text-gray-light semiBold">Public Relations & Media Marketing
+                            Solutions</h2>
+                    </div>
+
+                    <div class="ae-6 fromBottom">
+
+                        <ul class="grid later grid-ladder equal">
+
+                            {% assign sorted_pages = (site.pages | where: 'layout', 'page' | sort: 'id') %}
+                            {% for item in sorted_pages %}
+
+                            <li class="col-4-12">
+                                <a href="{{item.url}}" class="box-79 equalElement">
+                                    <div class="name-79 table wide">
+                                        <div class="cell">
+                                            <img src="{{item.page_icon}}" width="100">
+                                            <div class="title-79">{{item.title}}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {% endfor %}
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="background background-top"></div>
+</section>
+
+<!-- About -->
+<section class="slide whiteSlide autoHeight transparent" data-name="about">
+    <div class="content">
+        <div class="container">
+            <div class="wrap left">
+
+                <div class="fix-12-12">
+                    <h2 class="text-gray-light semiBold margin-bottom-3 huge left">About us</h2>
+                    <div class="grid">
+                        <div class="col-6-12">
+                            <div class="card-main card-main-mob ae-5">
+
+                                {{ content }}
+
+                            </div>
+                            <div class="margin-bottom-4 hideForDesktop">&nbsp;</div>
+                        </div>
+                        <div class="col-6-12">
+                            <ul class="grid grid-68 equal later tintLogos">
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-3">
+                                        <div class="cell sidebarTrigger" data-sidebar-id="client-dscr">
+                                            <img width="89" src="img/bbc.png" alt="BBC"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-4">
+                                        <div class="cell sidebarTrigger" data-sidebar-id="client-dscr">
+                                            <img width="115" src="img/google.png" alt="Google"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-5">
+                                        <div class="cell sidebarTrigger" data-sidebar-id="client-dscr">
+                                            <img width="42" src="img/warner-bros.png" alt="Warner Bros"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-6">
+                                        <div class="cell sidebarTrigger" data-sidebar-id="client-dscr">
+                                            <img width="124" src="img/canon.png" alt="Canon"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-7">
+                                        <div class="cell sidebarTrigger" data-sidebar-id="client-dscr">
+                                            <img width="83" src="img/nike.png" alt="Nike"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-8">
+                                        <div class="cell sidebarTrigger" data-sidebar-id="client-dscr">
+                                            <img width="153" src="img/greenpeace.png" alt="Green Peace"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-9">
+                                        <div class="cell sidebarTrigger" data-sidebar-id="client-dscr">
+                                            <img width="125" src="img/facebook.png" alt="Facebook"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-10">
+                                        <div class="cell sidebarTrigger" data-sidebar-id="client-dscr">
+                                            <img width="155" src="img/microsoft.png" alt="Microsoft"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-10">
+                                        <div class="cell sidebarTrigger" data-sidebar-id="client-dscr">
+                                            <img width="85" src="img/audi.png" alt="Audi"/>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="slide whiteSlide autoHeight transparent" data-name="contact">
+    <div class="content">
+        <div class="container">
+            <div class="wrap">
+
+                <div class="fix-12-12">
+                    <h2 class="text-gray-light semiBold margin-bottom-3 huge left">Contact us</h2>
+                    <div class="box-contact card-main-mob ae-5">
+                        <div class="grid left">
+                            <div class="col-7-12">
+                                <form action="#" autocomplete="off" class="wide">
+                                    <input class="wide" id="name" type="text" name="name" placeholder="Name" required/>
+                                    <input class="wide" id="email" type="email" name="email" placeholder="Email"
+                                           required/>
+                                    <textarea class="stroke" id="message" type="text" name="message"
+                                              placeholder="Message"
+                                              maxlength="1000" rows="10" required></textarea>
+                                    <input class="button stroke wide uppercase" type="submit" name="submit"
+                                           value="Send"/>
+                                </form>
+                            </div>
+                            <div class="col-5-12 box-contact-address">
+                                <p>{{site.address}}<p>
+                                <p>{{site.phone}}<br><a href="mailto:{{site.email}}">{{site.email}}</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="background background-bottom"></div>
+</section>
+
+<!-- Sidebar Left -->
+<nav class="sidebar black left" data-sidebar-id="client-dscr">
+    <div class="close">
+        <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
+        </svg>
+    </div>
+    <div class="content">
+        <img class="block margin-top-3 margin-bottom-3" width="89" src="img/bbc.png" alt="BBC"/>
+        <p><a class="text-blue" href="//google.com" target="_blank">bbc.com</a></p>
+        <p>Our customers can confirm that we are reliable and competent specialists possessing in-depth
+            knowledge of
+            the market intricacies and the necessary skills to achieve success.
+        </p>
+        <p>We have been successfully developing and implementing marketing strategies for Israeli and
+            international
+            companies and brands. We work with audiences using our long-term contacts and connections with the leading
+            mass media outlets, journalists and bloggers.
+        </p>
+        <p>We have been successfully developing and implementing marketing strategies for Israeli and
+            international companies and brands.
+        </p>
+
+        <p>We have been successfully developing and implementing marketing strategies for Israeli and
+            international companies and brands. We work with audiences using our long-term contacts and connections with
+            the leading mass media outlets, journalists and bloggers.
+        </p>
+
+        <p>We have been successfully developing and implementing marketing strategies for Israeli and
+            international companies and brands. We work with audiences using our long-term contacts and connections with
+            the leading mass media outlets, journalists and bloggers.
+        </p>
+    </div>
+</nav>
+
+<!-- Navigation -->
+<nav class="side">
+    <div class="navigation">
+        <ul>
+            <li data-title="Services"><span>Solutions</span></li>
+            <li data-title="About"><span>About</span></li>
+            <li data-title="Contact"><span>Contact</span></li>
+        </ul>
+    </div>
+</nav>

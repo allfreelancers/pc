@@ -1,0 +1,30 @@
+---
+title: Pareto Capital
+timezone: Jerusalem
+description: ""
+baseurl: 
+url: "//fkolesnik.github.io/pc"
+email: alina@paretocapital.net
+phone: "1-800-212-212​⁠​"
+address: "Pareto Capital 80/20 Ltd.<br>
+         54 HaMasger St.<br>
+         POB 51406<br>
+         Tel Aviv 6721421<br>
+         Israel"
+copyright: "© 2017 Pareto Capital. All rights reserved"
+permalink: pretty
+markdown: kramdown
+gems:
+- jekyll-feed
+exclude:
+- Gemfile
+- Gemfile.lock
+- node_modules
+- gulpfile.js
+- package.json
+- .idea
+- tmp
+sass:
+    sass_dir: _sass
+    style: compressed
+
