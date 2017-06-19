@@ -1,7 +1,7 @@
 ---
+title: WOM
 id: 5
 layout: page
-title: WOM
 page_icon: "/img/icon-service-wom.svg"
 ---
 

@@ -1,7 +1,7 @@
 ---
+title: Social Media Marketing
 id: 2
 layout: page
-title: Social Media Marketing
 page_icon: "/img/icon-service-socials.svg"
 ---
 
