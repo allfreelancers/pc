@@ -66,14 +66,14 @@ layout: default
                             </div>
                             <div class="margin-bottom-4 hideForDesktop">&nbsp;</div>
                         </div>
-                        <div class="col-6-12">
+                        <div class="col-5-12">
                             <ul class="grid grid-68 equal later tintLogos">
-                                {% assign clients = (site.clients | sort: 'date') %}
+                                {% assign clients = (site.clients | sort: 'position') %}
                                 {% for client in clients %}
                                 <li class="col-6-12">
                                     <div class="table wide equalElement ae-3">
                                         <div class="cell sidebarTrigger" data-sidebar-id="{{client.title | slugify }}">
-                                            <img width="80" src="{{client.logo}}" alt="{{client.title}} logo"/>
+                                            <img width="85" src="{{client.logo}}" alt="{{client.title}} logo"/>
                                         </div>
                                     </div>
                                 </li>
