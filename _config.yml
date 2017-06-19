@@ -2,6 +2,9 @@
 title: Pareto Capital
 timezone: Asia/Jerusalem
 collections:
+  clients:
+    title: Clients
+    output: true
   posts:
     title: Posts
     output: true
