@@ -1,29 +1,16 @@
 ---
 title: Media Relations
 position: 1
-layout: page
 page_icon: "/img/icon-service-pr.svg"
+layout: page
 ---
 
-We&nbsp;are building a&nbsp;long-term relationship with the mass media. We&nbsp;are
-                        committed to&nbsp;delivering your messages to&nbsp;your target audience by&nbsp;using
-                        online and
-                        traditional media outlets.
-                        <ul class="circle padding-left-2">
-                            <li>Creating media database, establishing long-term
-                                relationships
-                                with
-                                journalists</li>
-                            <li>Writing press releases, press kits, advertisements,
-                                comments,
-                                and
-                                articles</li>
-                            <li>Engaging in&nbsp;personal collaboration with bloggers,
-                                online
-                                communities, forums
-                                and video
-                                hosting sites</li>
-                            <li>Organizing memorable media events, inviting journalists and
-                                providing
-                                follow-up.</li>
-                        </ul>
+We are building a long-term relationship with the mass media. We are committed to delivering your messages to your target audience by using online and traditional media outlets. 
+
+* Creating media database, establishing long-term relationships with journalists
+
+* Writing press releases, press kits, advertisements, comments, and articles
+
+* Engaging in personal collaboration with bloggers, online communities, forums and video hosting sites
+
+* Organizing memorable media events, inviting journalists and providing follow-up
