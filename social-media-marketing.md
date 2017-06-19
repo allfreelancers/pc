@@ -1,29 +1,22 @@
 ---
 title: Social Media Marketing
 id: 2
-layout: page
 page_icon: "/img/icon-service-socials.svg"
+layout: page
 ---
 
-We&nbsp;are building a&nbsp;long-term relationship with the mass media. We&nbsp;are
-                        committed to&nbsp;delivering your messages to&nbsp;your target audience by&nbsp;using
-                        online and
-                        traditional media outlets.
-                        <ul class="circle padding-left-2">
-                            <li>Creating media database, establishing long-term
-                                relationships
-                                with
-                                journalists</li>
-                            <li>Writing press releases, press kits, advertisements,
-                                comments,
-                                and
-                                articles</li>
-                            <li>Engaging in&nbsp;personal collaboration with bloggers,
-                                online
-                                communities, forums
-                                and video
-                                hosting sites</li>
-                            <li>Organizing memorable media events, inviting journalists and
-                                providing
-                                follow-up.</li>
-                        </ul>
+We promote your products and services in social media. We know how and where to find your target audience. We don’t just “set up profiles” to collect most “likes” with no real value. We create strategies for communication with users, engaging them in a dialog by using only the original content custom created for your business needs.
+
+* Planning and implementing social media presence strategies
+
+* Developing and implementing special projects in social media
+
+* Creating SMM strategy
+
+* Creating and promoting profiles/groups in social media (VKontakte, Facebook, Odnoklassniki)
+
+* Carrying out targeted advertising
+
+* Creating reputation-marketing strategies and working with the blogosphere: guerilla
+
+* marketing in forums, blogs and trading platforms (content seeding, Q&A by agents of influence).
