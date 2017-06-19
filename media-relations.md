@@ -1,7 +1,7 @@
 ---
+title: Media Relations
 id: 1
 layout: page
-title: Media Relations
 page_icon: "/img/icon-service-pr.svg"
 ---
 
