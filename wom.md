@@ -1,5 +1,5 @@
 ---
-title: WOM
+title: Word of Mouth
 id: 5
 layout: page
 page_icon: "/img/icon-service-wom.svg"
