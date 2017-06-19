@@ -16,7 +16,7 @@ defaults:
     path: ''
     type: clients
   values:
-    site-url:
+    site-url: 
     logo: ''
 description: Public Relations & Media Marketing Solutions
 baseurl: 
