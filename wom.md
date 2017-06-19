@@ -1,6 +1,6 @@
 ---
 title: WOM
-position: 6
+position: 5
 id: 5
 page_icon: "/img/icon-service-wom.svg"
 layout: page
