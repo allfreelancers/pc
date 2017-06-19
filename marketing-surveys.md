@@ -1,29 +1,21 @@
 ---
 title: Marketing Surveys
 id: 4
-layout: page
 page_icon: "/img/icon-service-surveys.svg"
+layout: page
 ---
 
-We&nbsp;are building a&nbsp;long-term relationship with the mass media. We&nbsp;are
-                        committed to&nbsp;delivering your messages to&nbsp;your target audience by&nbsp;using
-                        online and
-                        traditional media outlets.
-                        <ul class="circle padding-left-2">
-                            <li>Creating media database, establishing long-term
-                                relationships
-                                with
-                                journalists</li>
-                            <li>Writing press releases, press kits, advertisements,
-                                comments,
-                                and
-                                articles</li>
-                            <li>Engaging in&nbsp;personal collaboration with bloggers,
-                                online
-                                communities, forums
-                                and video
-                                hosting sites</li>
-                            <li>Organizing memorable media events, inviting journalists and
-                                providing
-                                follow-up.</li>
-                        </ul>
+Thanks to our proprietary online survey service called “Wisdom of the Crowd”, we can offer you marketing surveys virtually on any subject.
+
+Based on survey results, we will create a report detailing participants’ sociological portrait that will help you assess the demand for your products and services among different social groups.
+Our clients represent the renowned and reputable Israeli companies. Many of our surveys have provided foundation for successful PR campaigns and marketing strategies.
+
+* Assessing public image of a company / individual
+
+* Assessing online positioning of a company / individual
+
+* Conducting social studies and opinion polls
+
+* Providing competitive environment analysis
+
+* Analyzing consumer buying decision process.
