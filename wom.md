@@ -3,6 +3,8 @@ title: Word of Mouth
 position: 6
 page_icon: "/img/icon-service-wom.svg"
 layout: page
+lang: en
+ref: media-relations
 ---
 
 We actively disseminate information desired by consumers in the way that is most preferable to them – via informal channels.

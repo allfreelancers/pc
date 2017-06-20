@@ -3,6 +3,8 @@ title: Events
 position: 4
 page_icon: "/img/icon-service-events.svg"
 layout: page
+lang: en
+ref: media-relations
 ---
 
 Interested in holding an event and telling about yourself, your products or your company? Would you like to create noise about this event online? We can plan and carry out such an event for you, find media partners, invite top journalists and bloggers and create buzz about it in social media.

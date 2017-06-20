@@ -2,6 +2,7 @@
 title: About text
 position: 0
 layout: homepage
+lang: en
 ---
 
 PR agency “Pareto Capital 80/20 Ltd. Israel” provides specialized services to the Russian-speaking community in Israel. Our top specialists have over 10 years of experience in the field.

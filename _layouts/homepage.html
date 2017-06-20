@@ -23,7 +23,7 @@ layout: default
                     <div class="ae-6 fromBottom">
 
                         <ul class="grid later grid-ladder equal">
-                            {% assign sorted_pages = (site.pages | where: 'layout', 'page' | sort: 'position') %}
+                            {% assign sorted_pages = (site.pages | where: 'layout', 'page' | where: 'lang', 'en' | sort: 'position') %}
                             {% for item in sorted_pages %}
                             <li class="col-4-12">
                                 <a href="{{item.url}}" class="box-79 equalElement">

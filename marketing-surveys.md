@@ -3,6 +3,8 @@ title: Marketing Surveys
 position: 5
 page_icon: "/img/icon-service-surveys.svg"
 layout: page
+lang: en
+ref: media-relations
 ---
 
 Thanks to our proprietary online survey service called “Wisdom of the Crowd”, we can offer you marketing surveys virtually on any subject.
