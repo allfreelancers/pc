@@ -5,7 +5,6 @@ page_icon: "/img/icon-service-pr.svg"
 layout: page
 lang: en
 ref: media-relations
-
 ---
 
 We are building a long-term relationship with the mass media. We are committed to delivering your messages to your target audience by using online and traditional media outlets. 
