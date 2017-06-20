@@ -130,8 +130,8 @@ body.slides {
 .panel.top {
   transform: translateY(0) !important;
   pointer-events: initial;
-  background: rgba(255,255,255,.95);
-  box-shadow:0 1px 1px rgba(0,0,0,0.20);
+  background: rgba(255, 255, 255, .95);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.20);
   @media screen and (min-width: 1150px) {
     padding-left: 0;
     padding-right: 0;
@@ -262,9 +262,32 @@ body.slides {
 }
 
 /* Sidebars */
-.sidebar.left {
+.sidebar.sidebar-client {
   width: 100%;
   max-width: 700px;
+}
+
+.sidebar.sidebar-menu {
+  background-color: rgba(255,255,255,0.95);
+  box-shadow: -3px 0 3px rgba(0,0,0,0.1);
+  li {
+    margin-top: 20px;
+    a {
+      color: $black;
+      opacity: .6;
+      display: block;
+    }
+  }
+  .close svg {
+    fill: $gray-lighter;
+  }
+}
+
+/* Mobile menu on slides changing */
+.slides.stage-1 .sidebar.sidebar-menu li:nth-child(1) a,
+.slides.stage-2 .sidebar.sidebar-menu li:nth-child(2) a,
+.slides.stage-3 .sidebar.sidebar-menu li:nth-child(3) a {
+  opacity: 1;
 }
 
 /* Dropdowns */

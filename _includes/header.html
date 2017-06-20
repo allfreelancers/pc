@@ -1,5 +1,4 @@
 <!-- Header -->
-<!-- TODO make another header - remove the sidebar navigation -->
 <nav class="panel top small fixed forceMobileView">
     <div class="sections desktop">
         <div class="left">
@@ -43,7 +42,7 @@
             <img src="{{site.url}}{{site.baseurl}}/img/pareto-logo.png" width="220" alt="{{site.title}}/"></a>
         </div>
         <div class="right">
-            <span class="button actionButton sidebarTrigger" data-sidebar-id="1">
+            <span class="button actionButton sidebarTrigger" data-sidebar-id="sidebar-menu">
                 <svg>
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use>
                 </svg>
@@ -54,24 +53,6 @@
         </div>
     </div>
 </nav>
-
-
-<!--<div class="sections compact hidden">
-    <div class="left">
-        {% if page.lang == "en" %}<a href="{{site.url}}{{site.baseurl}}">
-        {% else %}<a href="{{site.url}}{{site.baseurl}}/{{page.lang}}">{% endif %}
-        <img src="{{site.url}}{{site.baseurl}}/img/pareto-logo.png" width="105" alt="{{site.title}}/"></a>
-    </div>
-    <div class="right">
-            <span class="button actionButton sidebarTrigger" data-sidebar-id="1">
-                <svg>
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use>
-                </svg>
-            </span>
-        <span data-dropdown-id="dropdown-language" class="button actionButton dropdownTrigger">EN</span>
-    </div>
-</div>-->
-
 
 <!-- Language selector dropdown -->
 <div class="dropdown top right customDropdown" data-dropdown-id="dropdown-language">
@@ -89,9 +70,8 @@
     </ul>
 </div>
 
-
 <!-- Mobile Menu -->
-<nav class="sidebar" data-sidebar-id="1">
+<nav class="sidebar sidebar-menu" data-sidebar-id="sidebar-menu">
     <div class="close">
         <svg>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
@@ -101,18 +81,25 @@
         {% if page.lang == "en" %}<a href="{{site.url}}{{site.baseurl}}">
         {% else %}<a href="{{site.url}}{{site.baseurl}}/{{page.lang}}">{% endif %}
         <img src="{{site.url}}{{site.baseurl}}/img/pareto-logo.png" width="158" alt="{{site.title}}/"></a>
-        <ul class="mainMenu uppercase margin-top-3">
-            {% if page.lang == "en" %}
-            <li><a href="#">Solutions</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            {% elsif page.lang == "ru" %}
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Контакты</a></li>
-            {% elsif page.lang == "he" %}
-            <li><a href="#">Иврит</a></li>
-            {% endif %}
+        <ul class="mainMenu margin-top-6">
+            <li>
+                <a href="#solutions">
+                    {% if page.lang == "en" %}Solutions{% elsif page.lang == "ru" %}Услуги{% elsif page.lang == "he"
+                    %}Иврит{% endif %}
+                </a>
+            </li>
+            <li>
+                <a href="#about">
+                    {% if page.lang == "en" %}About{% elsif page.lang == "ru" %}О нас{% elsif page.lang == "he"
+                    %}Иврит{% endif %}
+                </a>
+            </li>
+            <li>
+                <a href="#contact">{% if page.lang == "en" %}Contact{% elsif page.lang == "ru" %}Контакты{% elsif
+                    page.lang
+                    == "he" %}Иврит{% endif %}
+                </a>
+            </li>
         </ul>
     </div>
 </nav>
