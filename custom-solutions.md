@@ -1,6 +1,6 @@
 ---
 title: Custom Solutions
-position: 6
+position: 7
 page_icon: "/img/icon-service-custom.svg"
 layout: page
 ---

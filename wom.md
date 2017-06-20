@@ -1,6 +1,6 @@
 ---
 title: Word of Mouth
-position: 5
+position: 6
 page_icon: "/img/icon-service-wom.svg"
 layout: page
 ---
