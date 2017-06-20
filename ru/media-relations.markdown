@@ -1,5 +1,5 @@
 ---
-title: Связь с общественностью
+title: Связи с общественностью
 position: 2
 page_icon: "/img/icon-service-pr.svg"
 layout: page

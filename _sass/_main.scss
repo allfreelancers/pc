@@ -51,7 +51,7 @@ body {
   }
 
   .typed-cursor {
-    color: $primary;
+    color: $gray-dark;
     opacity: 1;
     animation: blink 1s infinite;
   }
@@ -74,8 +74,7 @@ body {
 
 @media screen and (max-width: 520px) {
   h1, h1.huge, h1.punch-line {
-    font-size: 34px;
-    font-weight: normal;
+    font-size: 32px;
   }
   h2, h2.huge {
     font-size: 24px;
@@ -126,27 +125,47 @@ body.slides {
   min-height: inherit;
 }
 
-/* Layout, grids */
+/* Headers */
 
 .panel.top {
   transform: translateY(0) !important;
   pointer-events: initial;
-  .right a {
-    opacity: 0.4;
-    font-size: 18px;
-    margin-left: 30px;
-    text-transform: uppercase;
-    font-weight: 500;
-    &:hover {
-      opacity: 1;
-    }
-    &.en:lang(en), &.ru:lang(ru) {
-      opacity: 1;
+  background: rgba(255,255,255,.95);
+  box-shadow:0 1px 1px rgba(0,0,0,0.20);
+  @media screen and (min-width: 1150px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .sections.desktop {
+    width: 100%;
+    max-width: 1114px;
+    margin: 0 auto;
+    .right {
+      li {
+        vertical-align: middle;
+        font-size: 22px;
+        display: inline-block;
+        margin: 0 15px;
+        font-weight: 500;
+        a {
+          opacity: .6;
+          &:hover {
+            opacity: .9;
+          }
+        }
+      }
     }
   }
 }
 
+/* Menu on slides changing */
+.slides.stage-1 .panel.top .menu li:nth-child(1) a,
+.slides.stage-2 .panel.top .menu li:nth-child(2) a,
+.slides.stage-3 .panel.top .menu li:nth-child(3) a {
+  opacity: 1;
+}
 
+/* Footers */
 
 .panel.bottom {
   p {
@@ -157,10 +176,12 @@ body.slides {
   }
 }
 
+/* Layout, grids, boxes */
+
 .grid-ladder {
   margin-top: 40px;
   @media screen and (min-width: 520px) {
-    margin-top: 120px;
+    margin-top: 140px;
   }
   .box-79 {
     @extend .card-main;
@@ -192,7 +213,9 @@ body.slides {
   box-shadow: $box-shadow;
   border-radius: 10px;
   padding: 40px;
-  p {line-height: 1.6;}
+  p {
+    line-height: 1.6;
+  }
   @media screen and (max-width: 767px) {
     padding: 20px;
     &.card-main-mob {
@@ -244,3 +267,32 @@ body.slides {
   max-width: 700px;
 }
 
+/* Dropdowns */
+
+.dropdownTrigger.dropdownTriggerLanguage {
+  text-transform: capitalize;
+  font-size: 18px;
+  padding: 16px 14px !important;
+  letter-spacing: 1px;
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+  }
+}
+
+.customDropdown {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  li a {
+    width: 100%;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    opacity: .6;
+  }
+}
+
+.customDropdown .en:lang(en), .ru:lang(ru) {
+  opacity: 1;
+}
