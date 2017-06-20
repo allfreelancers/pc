@@ -6,6 +6,7 @@ layout: page
 lang: ru
 ref: wom
 ---
+
 WOM (Word-of-mouth&nbsp;&mdash; из&nbsp;уст в&nbsp;уста)&nbsp;&mdash; активное распространение необходимой заказчику информации в&nbsp;нужном заказчику ключе&nbsp;&mdash; по&nbsp;неформальных каналам:
 
 * Определение &laquo;ключевого сообщения&raquo;
