@@ -1,5 +1,7 @@
 ---
 layout: default
+ref: index
+lang: en
 ---
 
 <!-- Solutions -->
@@ -23,7 +25,8 @@ layout: default
                     <div class="ae-6 fromBottom">
 
                         <ul class="grid later grid-ladder equal">
-                            {% assign sorted_pages = (site.pages | where: 'layout', 'page' | where: 'lang', 'en' | sort: 'position') %}
+                            {% assign sorted_pages = (site.pages | where: 'layout', 'page' | where: 'lang', page.lang | sort:
+                            'position') %}
                             {% for item in sorted_pages %}
                             <li class="col-4-12">
                                 <a href="{{item.url}}" class="box-79 equalElement">
@@ -58,10 +61,21 @@ layout: default
                 <div class="fix-12-12">
                     <h2 class="text-gray-light semiBold margin-bottom-3 huge left">About us</h2>
                     <div class="grid">
-                        <div class="col-6-12">
+                        <div class="col-7-12">
                             <div class="card-main card-main-mob ae-5">
 
-                                {{ content }}
+                                <p>PR agency “Pareto Capital 80/20 Ltd. Israel” provides specialized services to the
+                                    Russian-speaking community in Israel. Our top specialists have over 10 years of
+                                    experience in the field.</p>
+
+                                <p>Our customers can confirm that we are reliable and competent specialists possessing
+                                    in-depth knowledge of the market intricacies and the necessary skills to achieve
+                                    success.</p>
+
+                                <p>We have been successfully developing and implementing marketing strategies for
+                                    Israeli and international companies and brands. We work with audiences using our
+                                    long-term contacts and connections with the leading mass media outlets, journalists
+                                    and bloggers.</p>
 
                             </div>
                             <div class="margin-bottom-4 hideForDesktop">&nbsp;</div>
@@ -142,14 +156,3 @@ layout: default
     </div>
 </div>
 {% endfor %}
-
-<!-- Navigation -->
-<nav class="side">
-    <div class="navigation">
-        <ul>
-            <li data-title="Services"><span>Solutions</span></li>
-            <li data-title="About"><span>About</span></li>
-            <li data-title="Contact"><span>Contact</span></li>
-        </ul>
-    </div>
-</nav>

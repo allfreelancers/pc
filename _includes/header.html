@@ -1,13 +1,35 @@
 <!-- Header -->
+<!-- TODO make another header - remove the sidebar navigation -->
 <nav class="panel top">
     <div class="fix-12-12">
         <div class="sections">
-            <div class="left"><a href="{{site.url}}{{site.baseurl}}"><img src="{{site.url}}{{site.baseurl}}/img/pareto-logo.png" width="240"
-                                                alt="{{site.title}}/"></a></div>
+            <div class="left">
+                {% if page.lang == "en" %}<a href="{{site.url}}{{site.baseurl}}">
+                {% else %}<a href="{{site.url}}{{site.baseurl}}/{{page.lang}}">{% endif %}
+                <img src="{{site.url}}{{site.baseurl}}/img/pareto-logo.png" width="240" alt="{{site.title}}/"></a>
+            </div>
             <div class="right">
-                <a href="#" class="active">EN</a>
+
+                {% if page.lang == "en" %}
+                <a href="#">Solutions</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                {% elsif page.lang == "ru" %}
+                <a href="#">Услуги</a>
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+                {% elsif page.lang == "he" %}
+                <a href="#">Иврит</a>
+                {% endif %}
+
+                {% assign pages=site.pages | where:"ref", page.ref | sort: "lang" %}
+                {% for page in pages %}
+                <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
+                {% endfor %}
+                </ul>
+                <!--<a href="#" class="active">EN</a>
                 <a href="#">RU</a>
-                <a href="#">HE</a>
+                <a href="#">HE</a>-->
             </div>
         </div>
     </div>

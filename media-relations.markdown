@@ -1,18 +1,18 @@
 ---
-title: Связь с общественностью
-position: 2
+title: Media Relations
+position: 1
 page_icon: "/img/icon-service-pr.svg"
-lang: ru
-ref: media-relations
 layout: page
+lang: en
+ref: media-relations
 ---
 
-Мы строим долгосрочные взаимоотношения со СМИ. С помощью он-лайн и традиционных СМИ мы организуем доставку сообщений вашей компании до вашей целевой аудиторий.
+We are building a long-term relationship with the mass media. We are committed to delivering your messages to your target audience by using online and traditional media outlets. 
 
-* Создание базы СМИ, установка долгосрочных связей с журналистами
+* Creating media database, establishing long-term relationships with journalists
 
-* Подготовка текстов пресс-релизов, пресс-китов, анонсов, комментариев и статей
+* Writing press releases, press kits, advertisements, comments, and articles
 
-* Индивидуальная работа с блогерами, интернет-сообществами, форумами и видеохостингами
+* Engaging in personal collaboration with bloggers, online communities, forums and video hosting sites
 
-* Организация запоминающихся пресс-мероприятий, приглашение журналистов, follow-up
+* Organizing memorable media events, inviting journalists and providing follow-up

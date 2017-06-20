@@ -132,18 +132,21 @@ body.slides {
   transform: translateY(0) !important;
   pointer-events: initial;
   .right a {
-    opacity: 0.6;
-    font-size: 20px;
-    margin-left: 10px;
+    opacity: 0.4;
+    font-size: 18px;
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
     &:hover {
       opacity: 1;
     }
-    &.active {
+    &.en:lang(en), &.ru:lang(ru) {
       opacity: 1;
-      font-weight: 500;
     }
   }
 }
+
+
 
 .panel.bottom {
   p {
@@ -214,36 +217,6 @@ body.slides {
       text-align: center;
       margin-top: 50px;
     }
-  }
-}
-
-/* Navigations */
-
-@media screen and (min-width: 1200px) {
-  .side .navigation li:after,
-  .side .navigation li:before {
-    display: none;
-  }
-
-  .side .navigation li {
-    font-size: 14px;
-    opacity: 0.6;
-    transition: 0.25s;
-    text-align: right;
-    color: $black;
-  }
-  .side .navigation li:hover {
-    opacity: 1;
-  }
-
-  .side .navigation li.selected {
-    opacity: 1;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .side .navigation {
-    display: none;
   }
 }
 
