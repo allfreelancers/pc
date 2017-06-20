@@ -1,56 +1,48 @@
 <!-- Header -->
-{% if page.lang == "he" %}
-<nav class="panel top small fixed forceMobileView" dir="rtl">
-    {% else %}
-    <nav class="panel top small fixed forceMobileView">
-        {% endif %}
+
+<nav class="panel top small fixed forceMobileView"{% if page.lang == "he" %}dir="rtl"{% endif %}>
+
 
         <div class="sections desktop">
-            <div class="left" {% if page.lang == 'he' %}style="text-align: right !important;"{% endif %}>
-            {% if page.lang == "en" %}<a href="{{site.url}}{{site.baseurl}}">
-            {% else %}<a href="{{site.url}}{{site.baseurl}}/{{page.lang}}">{% endif %}
-            <img src="{{site.url}}{{site.baseurl}}/img/pareto-logo.png" width="220" alt="{{site.title}}/"></a>
+
+            <div class="left"{% if page.lang == 'he' %} style="text-align: right !important;"{% endif %}>{% if page.lang == "en" %}<a href="{{site.url}}{{site.baseurl}}">{% else %}<a href="{{site.url}}{{site.baseurl}}/{{page.lang}}">{% endif %}<img src="{{site.url}}{{site.baseurl}}/img/pareto-logo.png" width="220" alt="{{site.title}}/"></a></div>
+
+            <div class="right"{% if page.lang =='he' %} style="text-align: left !important;"{% endif %}>
+                <ul class="menu crop">
+                    <li>
+                        <a href="#solutions">
+                            {% if page.lang == "en" %}Solutions{% elsif page.lang == "ru" %}Услуги{% elsif page.lang ==
+                            "he"
+                            %}שירותים{% endif %}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            {% if page.lang == "en" %}About{% elsif page.lang == "ru" %}О нас{% elsif page.lang == "he"
+                            %}אודותינו{% endif %}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">{% if page.lang == "en" %}Contact{% elsif page.lang == "ru" %}Контакты{%
+                            elsif
+                            page.lang == "he" %}צרו קשר{% endif %}
+                        </a>
+                    </li>
+                    <li {% if page.lang == 'he' %}style="margin: 0;"{% endif %}><span data-dropdown-id="dropdown-language" class="button actionButton dropdownTrigger dropdownTriggerLanguage" {% if page.lang == 'he' %}style="margin-left: 0;margin-right: 30px;"{% endif %}>{{ page.lang }}</span></li>
+                </ul>
+            </div>
+
         </div>
-        <div class="right" {% if page.lang == 'he' %}style="text-align: left !important;"{% endif %}>
-            <ul class="menu crop">
-                <li>
-                    <a href="#solutions">
-                        {% if page.lang == "en" %}Solutions{% elsif page.lang == "ru" %}Услуги{% elsif page.lang ==
-                        "he"
-                        %}שירותים{% endif %}
-                    </a>
-                </li>
-                <li>
-                    <a href="#about">
-                        {% if page.lang == "en" %}About{% elsif page.lang == "ru" %}О нас{% elsif page.lang == "he"
-                        %}אודותינו{% endif %}
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact">{% if page.lang == "en" %}Contact{% elsif page.lang == "ru" %}Контакты{%
-                        elsif
-                        page.lang == "he" %}צרו קשר{% endif %}
-                    </a>
-                </li>
-                <li {% if page.lang == 'he' %}style="margin: 0;"{% endif %}>
-                    <span data-dropdown-id="dropdown-language"
-                          class="button actionButton dropdownTrigger dropdownTriggerLanguage"
-                          {% if page.lang == 'he' %}style="margin-left: 0;margin-right: 30px;"{% endif %}>
-                        {{ page.lang }}
-                    </span>
-                </li>
-            </ul>
-        </div>
-        </div>
+
         <div class="sections compact hidden">
-            <div class="left">
+            <div class="left"{% if page.lang =='he' %} style="text-align: right !important;"{% endif %}>
                 {% if page.lang == "en" %}<a href="{{site.url}}{{site.baseurl}}">
                 {% else %}<a href="{{site.url}}{{site.baseurl}}/{{page.lang}}">{% endif %}
                 <img src="{{site.url}}{{site.baseurl}}/img/pareto-logo.png" width="220" alt="{{site.title}}/"></a>
             </div>
-            <div class="right">
+            <div class="right"{% if page.lang =='he' %} style="text-align: left !important;"{% endif %}>
             <span class="button actionButton sidebarTrigger" data-sidebar-id="sidebar-menu">
-                <svg>
+                <svg style="margin: 0;">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use>
                 </svg>
             </span>
@@ -62,7 +54,7 @@
     </nav>
 
     <!-- Language selector dropdown -->
-    <div class="dropdown top right customDropdown" data-dropdown-id="dropdown-language">
+    <div class="customDropdown dropdown top{% if page.lang =='he' %} left{% else %} right{% endif %}" data-dropdown-id="dropdown-language">
         <ul>
             {% assign pages=site.pages | where:"ref", page.ref | sort: "lang" %}
             {% for page in pages %}
@@ -92,19 +84,19 @@
                 <li>
                     <a href="#solutions">
                         {% if page.lang == "en" %}Solutions{% elsif page.lang == "ru" %}Услуги{% elsif page.lang == "he"
-                        %}Иврит{% endif %}
+                        %}שירותים{% endif %}
                     </a>
                 </li>
                 <li>
                     <a href="#about">
                         {% if page.lang == "en" %}About{% elsif page.lang == "ru" %}О нас{% elsif page.lang == "he"
-                        %}Иврит{% endif %}
+                        %}אודותינו{% endif %}
                     </a>
                 </li>
                 <li>
                     <a href="#contact">{% if page.lang == "en" %}Contact{% elsif page.lang == "ru" %}Контакты{% elsif
                         page.lang
-                        == "he" %}Иврит{% endif %}
+                        == "he" %}צרו קשר{% endif %}
                     </a>
                 </li>
             </ul>

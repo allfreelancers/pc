@@ -51,15 +51,15 @@ lang: he
 </section>
 
 <!-- About -->
-<section class="slide whiteSlide autoHeight transparent" data-name="about" dir="rtl">
+<section class="slide whiteSlide autoHeight transparent" data-name="about">
     <div class="content">
         <div class="container">
-            <div class="wrap right">
+            <div class="wrap">
 
                 <div class="fix-12-12">
                     <h2 class="text-gray-light semiBold margin-bottom-2 margin-top-2 huge">אודותינו</h2>
-                    <ul class="flex reverse">
-                        <li class="col-7-12">
+                    <ul class="grid">
+                        <li class="col-7-12" dir="rtl">
                             <div class="card-main card-main-mob ae-5 right">
 
                                 <p>סוכנות יחסי הציבור "Pareto Capital 80/20 Ltd. Israel" מתחמחה בהצעת מגוון שירותים
@@ -77,19 +77,19 @@ lang: he
                             <div class="margin-bottom-4 hideForDesktop">&nbsp;</div>
                         </li>
                         <li class="col-5-12">
-                        <ul class="grid grid-68 equal later tintLogos">
-                            {% assign clients = (site.clients | sort: 'position' ) %}
-                            {% for client in clients %}
-                            <li class="col-6-12">
-                                <div class="table wide equalElement ae-3">
-                                    <div class="cell sidebarTrigger" data-sidebar-id="{{client.title | slugify }}">
-                                        <img width="85" src="{{client.logo}}" alt="{{client.title}} logo"/>
+                            <ul class="grid grid-68 equal later tintLogos">
+                                {% assign clients = (site.clients | sort: 'position' ) %}
+                                {% for client in clients %}
+                                <li class="col-6-12">
+                                    <div class="table wide equalElement ae-3">
+                                        <div class="cell sidebarTrigger" data-sidebar-id="{{client.title | slugify }}">
+                                            <img width="85" src="{{client.logo}}" alt="{{client.title}} logo"/>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </li>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
                     </ul>
                 </div>
 
@@ -99,7 +99,7 @@ lang: he
 </section>
 
 <!-- Contact -->
-<section class="slide whiteSlide autoHeight transparent" data-name="contact" dir="rtl">
+<section class="slide whiteSlide autoHeight transparent" data-name="contact">
     <div class="content">
         <div class="container">
             <div class="wrap">
@@ -107,12 +107,7 @@ lang: he
                 <div class="fix-12-12">
                     <h2 class="text-gray-light semiBold margin-bottom-2 margin-top-2 huge">צרו קשר</h2>
                     <div class="box-contact card-main-mob ae-5">
-                        <div class="grid right">
-                            <div class="col-5-12 box-contact-address">
-                                <p>{{site.address-he}}
-                                <p>
-                                <p>{{site.phone}}<br><a href="mailto:{{site.email}}">{{site.email}}</a></p>
-                            </div>
+                        <div class="grid right" dir="rtl">
                             <div class="col-7-12">
                                 <form action="#" autocomplete="off" class="wide">
                                     <input class="wide" id="name" type="text" name="name" placeholder="שם"
@@ -125,6 +120,11 @@ lang: he
                                     <input class="button stroke wide uppercase" type="submit" name="submit"
                                            value="לשלוח"/>
                                 </form>
+                            </div>
+                            <div class="col-5-12 box-contact-address">
+                                <p>{{site.address-he}}
+                                <p>
+                                <p>{{site.phone}}<br><a href="mailto:{{site.email}}">{{site.email}}</a></p>
                             </div>
                         </div>
 
@@ -140,7 +140,7 @@ lang: he
 
 <!-- Client Description Sidebar -->
 {% for client in clients %}
-<div class="sidebar black sidebar-client" data-sidebar-id="{{client.title | slugify }}">
+<div class="sidebar black sidebar-client left" data-sidebar-id="{{client.title | slugify }}">
     <div class="close">
         <svg>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
