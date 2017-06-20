@@ -17,7 +17,7 @@ $(function () {
         shuffle: false
     });
     $(".punch-line-typed-he").typed({
-        strings: ["hebrew", "иврит", "дфдфдф", ],
+        strings: ["לעשות משהו", "לעשות משהו כזה", "לעשות משהו כזה בדיוק", ],
         typeSpeed: 75,
         startDelay: 2500,
         backDelay: 3000,

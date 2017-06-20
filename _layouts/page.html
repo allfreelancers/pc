@@ -3,10 +3,10 @@ layout: default
 ---
 
 <!-- Solution -->
-<section class="slide whiteSlide">
+<section class="slide whiteSlide" {% if page.lang == "he" %}dir="rtl"{% endif %}>
     <div class="content">
         <div class="container">
-            <div class="wrap left">
+            <div class="wrap {% if page.lang == 'he' %}right list-rtl{% else %}left{% endif %}">
 
                 <div class="fix-9-12 toCenter">
                     <div class="card-main card-main-mob ae-6 fromBottom">
@@ -14,7 +14,7 @@ layout: default
                             <div class="col-10-12">
                                 <div class="label-uppercase padding-bottom-1">
                                     {% if page.lang == "en" %}Solution{% elsif page.lang == "ru" %}Услуга{% else
-                                    page.lang == "he" %}Иврит{% endif %}
+                                    page.lang == "he" %}שירות{% endif %}
                                 </div>
                                 <h1 class="small">{{page.title}}</h1>
                             </div>
@@ -23,10 +23,11 @@ layout: default
 
                         {{content}}
 
-                        <a href="{{site.url}}{{site.baseurl}}/#contact"
+
+                        <a href="{{site.url}}{{site.baseurl}}/{{page.lang}}/#contact"
                            class="button stroke cropBottom small uppercase margin-top-2">
                             {% if page.lang == "en" %}Request a consultation{% elsif page.lang == "ru" %}Получить консультацию{% else
-                            page.lang == "he" %}Иврит{% endif %}</a>
+                            page.lang == "he" %}קבל ייעוץ{% endif %}</a>
                     </div>
                 </div>
 

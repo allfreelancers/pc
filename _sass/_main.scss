@@ -113,6 +113,16 @@ body.slides {
 .background.background-top {
   background: url("../img/bg-top.svg") no-repeat;
   background-position: 55% 100%;
+
+  &.background-rtl {
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+  }
+
 }
 
 .background.background-bottom {
@@ -208,6 +218,16 @@ body.slides {
   }
 }
 
+.grid-68 {
+  @media screen and (min-width: 1024px) {
+    img {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+}
+
 .card-main {
   background-color: $bg-white-trans;
   box-shadow: $box-shadow;
@@ -251,7 +271,10 @@ body.slides {
   &, & p {
     font-size: 16px;
   }
-
+}
+.list-rtl .card-main li {
+  margin-left: 0;
+  margin-right: 20px;
 }
 
 /* Buttons */
@@ -316,6 +339,12 @@ body.slides {
   }
 }
 
-.customDropdown .en:lang(en), .ru:lang(ru) {
+.customDropdown .en:lang(en), .ru:lang(ru), .he:lang(he) {
   opacity: 1;
+}
+
+/* Direction */
+
+.rtl {
+    direction: rtl !important;
 }
