@@ -291,18 +291,22 @@ body.slides {
 }
 
 .sidebar.sidebar-menu {
-  background-color: rgba(255,255,255,0.95);
-  box-shadow: -3px 0 3px rgba(0,0,0,0.1);
-  li {
-    margin-top: 20px;
-    a {
-      color: $black;
-      opacity: .6;
-      display: block;
-    }
-  }
+  max-width: 180px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: -3px 0 3px rgba(0, 0, 0, 0.1);
   .close svg {
-    fill: $gray-lighter;
+    fill: $gray-light;
+  }
+  .content {
+    padding: 20px;
+    li {
+      margin-top: 20px;
+      a {
+        color: $black;
+        opacity: .6;
+        display: block;
+      }
+    }
   }
 }
 

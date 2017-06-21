@@ -76,25 +76,26 @@
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
             </svg>
         </div>
-        <div class="content">
+        <div class="content margin-top-6">
             {% if page.lang == "en" %}<a href="{{site.url}}{{site.baseurl}}">
             {% else %}<a href="{{site.url}}{{site.baseurl}}/{{page.lang}}">{% endif %}
             <img src="{{site.url}}{{site.baseurl}}/img/pareto-logo.png" width="158" alt="{{site.title}}/"></a>
-            <ul class="mainMenu margin-top-6">
+            <ul class="mainMenu margin-top-4">
                 <li>
-                    <a href="{% if page.lang == 'en' %}/{% else%}/{{page.lang}}/{% endif %}#solutions">
+
+                    <a href="{% if page.lang == 'en' %}/{% else %}/{{page.lang}}/{% endif %}#solutions">
                         {% if page.lang == "en" %}Solutions{% elsif page.lang == "ru" %}Услуги{% elsif page.lang == "he"
                         %}שירותים{% endif %}
                     </a>
                 </li>
                 <li>
-                    <a href="{% if page.lang == 'en' %}/{% else%}/{{page.lang}}/{% endif %}#about">
+                    <a href="{% if page.lang == 'en' %}/{% else %}/{{page.lang}}/{% endif %}#about">
                         {% if page.lang == "en" %}About{% elsif page.lang == "ru" %}О нас{% elsif page.lang == "he"
                         %}אודותינו{% endif %}
                     </a>
                 </li>
                 <li>
-                    <a href="{% if page.lang == 'en' %}/{% else%}/{{page.lang}}/{% endif %}#contact">{% if page.lang == "en" %}Contact{% elsif page.lang == "ru" %}Контакты{% elsif
+                    <a href="{% if page.lang == 'en' %}/{% else %}/{{page.lang}}/{% endif %}#contact">{% if page.lang == "en" %}Contact{% elsif page.lang == "ru" %}Контакты{% elsif
                         page.lang
                         == "he" %}צרו קשר{% endif %}
                     </a>
