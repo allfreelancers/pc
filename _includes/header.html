@@ -10,20 +10,20 @@
             <div class="right"{% if page.lang =='he' %} style="text-align: left !important;"{% endif %}>
                 <ul class="menu crop">
                     <li>
-                        <a href="#solutions">
+                        <a href="{% if page.layout == 'page' %}{{site.url}}{{site.baseurl}}{% endif %}#solutions">
                             {% if page.lang == "en" %}Solutions{% elsif page.lang == "ru" %}Услуги{% elsif page.lang ==
                             "he"
                             %}שירותים{% endif %}
                         </a>
                     </li>
                     <li>
-                        <a href="#about">
+                        <a href="{% if page.layout == 'page' %}{{site.url}}{{site.baseurl}}{% endif %}#about">
                             {% if page.lang == "en" %}About{% elsif page.lang == "ru" %}О нас{% elsif page.lang == "he"
                             %}אודותינו{% endif %}
                         </a>
                     </li>
                     <li>
-                        <a href="#contact">{% if page.lang == "en" %}Contact{% elsif page.lang == "ru" %}Контакты{%
+                        <a href="{% if page.layout == 'page' %}{{site.url}}{{site.baseurl}}{% endif %}#contact">{% if page.lang == "en" %}Contact{% elsif page.lang == "ru" %}Контакты{%
                             elsif
                             page.lang == "he" %}צרו קשר{% endif %}
                         </a>
@@ -82,19 +82,19 @@
             <img src="{{site.url}}{{site.baseurl}}/img/pareto-logo.png" width="158" alt="{{site.title}}/"></a>
             <ul class="mainMenu margin-top-6">
                 <li>
-                    <a href="#solutions">
+                    <a href="{% if page.layout == 'page' %}{{site.url}}{{site.baseurl}}{% endif %}#solutions">
                         {% if page.lang == "en" %}Solutions{% elsif page.lang == "ru" %}Услуги{% elsif page.lang == "he"
                         %}שירותים{% endif %}
                     </a>
                 </li>
                 <li>
-                    <a href="#about">
+                    <a href="{% if page.layout == 'page' %}{{site.url}}{{site.baseurl}}{% endif %}#about">
                         {% if page.lang == "en" %}About{% elsif page.lang == "ru" %}О нас{% elsif page.lang == "he"
                         %}אודותינו{% endif %}
                     </a>
                 </li>
                 <li>
-                    <a href="#contact">{% if page.lang == "en" %}Contact{% elsif page.lang == "ru" %}Контакты{% elsif
+                    <a href="{% if page.layout == 'page' %}{{site.url}}{{site.baseurl}}{% endif %}#contact">{% if page.lang == "en" %}Contact{% elsif page.lang == "ru" %}Контакты{% elsif
                         page.lang
                         == "he" %}צרו קשר{% endif %}
                     </a>
