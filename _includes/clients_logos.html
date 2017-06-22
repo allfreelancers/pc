@@ -1,0 +1,12 @@
+<ul class="grid grid-68 equal later">
+    {% assign clients = (site.clients | sort: 'position' ) %}
+    {% for client in clients %}
+    <li class="col-6-12">
+        <div class="table wide equalElement ae-3">
+            <div class="cell sidebarTrigger padding-2" data-sidebar-id="{{client.title | slugify }}">
+                <img src="{{client.logo}}" alt="{{client.title}} logo" style="border: 1px solid #eee;"/>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
