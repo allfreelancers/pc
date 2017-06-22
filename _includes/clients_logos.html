@@ -3,8 +3,8 @@
     {% for client in clients %}
     <li class="col-6-12">
         <div class="table wide equalElement ae-3">
-            <div class="cell sidebarTrigger padding-2" data-sidebar-id="{{client.title | slugify }}">
-                <img width="90" src="{{client.logo}}" alt="{{client.title}} logo"/>
+            <div class="cell sidebarTrigger" data-sidebar-id="{{client.title | slugify }}">
+                <img width="80" src="{{client.logo}}" alt="{{client.title}} logo"/>
             </div>
         </div>
     </li>

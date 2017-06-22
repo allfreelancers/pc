@@ -106,9 +106,14 @@ p:last-child {
 
 /* Bgs */
 
-/*body.slides {
+body.slides {
   background-color: #fbfbfb;
-}*/
+  section.slide[data-name="about"],
+  section.slide[data-name="contact"] {
+    background: transparent !important;
+  }
+}
+
 
 .background.background-top {
   background: url("../img/bg-top.svg") no-repeat;
