@@ -1,10 +1,10 @@
 ---
-title: Мероприятия
+title: Организация мероприятий
 position: 4
 page_icon: "/img/icon-service-events.svg"
-layout: page
 lang: ru
 ref: events
+layout: page
 ---
 
 Вы&nbsp;хотите провести мероприятие, рассказать о&nbsp;вас, вашем товаре, вашей компании? Хотите, что&nbsp;бы об&nbsp;этом мероприятии &laquo;стоял шум&raquo; в&nbsp;интернете?
