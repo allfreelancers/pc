@@ -1,7 +1,7 @@
 // Punch line typing
 $(function () {
     $(".punch-line-typed").typed({
-        strings: ["draw attention", "work with media", "do something else", ],
+        strings: ["communicate with media", "attract attention", "make better", " promote"],
         typeSpeed: 75,
         startDelay: 2500,
         backDelay: 3000,
@@ -9,7 +9,7 @@ $(function () {
         shuffle: false
     });
     $(".punch-line-typed-ru").typed({
-        strings: ["привлечь внимание", "работать со СМИ", "сделать что-то еще", ],
+        strings: ["общаться со СМИ", "привлечь внимание", "сделать лучше", "продвигать"],
         typeSpeed: 75,
         startDelay: 2500,
         backDelay: 3000,
@@ -17,7 +17,7 @@ $(function () {
         shuffle: false
     });
     $(".punch-line-typed-he").typed({
-        strings: ["לעשות משהו", "לעשות משהו כזה", "לעשות משהו כזה בדיוק", ],
+        strings: [ "לתקשר עם התקשורת", "למשוך תשומת לב", "לעשות טוב יותר", "לקדם", ],
         typeSpeed: 75,
         startDelay: 2500,
         backDelay: 3000,
