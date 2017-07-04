@@ -105,16 +105,7 @@ lang: ru
                     <div class="box-contact card-main-mob ae-5">
                         <div class="grid left">
                             <div class="col-7-12">
-                                <form action="#" autocomplete="off" class="wide">
-                                    <input class="wide" id="name" type="text" name="name" placeholder="Ваше имя" required/>
-                                    <input class="wide" id="email" type="email" name="email" placeholder="Email"
-                                           required/>
-                                    <textarea class="stroke" id="message" type="text" name="message"
-                                              placeholder="Сообщение"
-                                              maxlength="1000" rows="10" required></textarea>
-                                    <input class="button stroke wide uppercase" type="submit" name="submit"
-                                           value="Отправить"/>
-                                </form>
+                                {% include contact_form.html %}
                             </div>
                             <div class="col-5-12 box-contact-address">
                                 <p>{{site.address}}

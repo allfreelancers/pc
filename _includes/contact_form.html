@@ -1,0 +1,25 @@
+<form autocomplete="off" class="wide" id="gform" method="POST"
+      action="https://script.google.com/macros/s/AKfycbwcoKN6RFBhLe9Iy8lGVfnGu0DPPt_PGL_3hJhMcDRySgvH5eY/exec">
+
+    {% if page.lang == 'en' %}<input class="wide js-input-field" id="name" type="text" name="name" placeholder="Name" value="" required/>
+    {% elsif page.lang == 'ru' %}<input class="wide js-input-field" id="name" type="text" name="name" placeholder="Имя" required/>
+    {% else %}<input class="wide js-input-field" id="name" type="text" name="name" placeholder="שם" required/>
+    {% endif %}
+
+    {% if page.lang == 'en' %}<input class="wide js-input-field" id="email" type="email" name="email" placeholder="Email" required/>
+    {% elsif page.lang == 'ru' %}<input class="wide js-input-field" id="email" type="email" name="email" placeholder="Электронная почта" required/>
+    {% else %}<input class="wide js-input-field" id="email" type="email" name="email" placeholder="אימייל" required/>
+    {% endif %}
+
+    {% if page.lang == 'en' %}<textarea class="stroke js-input-field" id="message" name="message" placeholder="Message" maxlength="1000" rows="10" required></textarea>
+    {% elsif page.lang == 'ru' %}<textarea class="stroke" id="message" name="message" placeholder="Сообщение" maxlength="1000" rows="10" required></textarea>
+    {% else %}<textarea class="stroke" id="message" name="message" placeholder="ההודעה שלך" maxlength="1000" rows="10" required></textarea>
+    {% endif %}
+
+    {% if page.lang == 'en' %}<input class="button stroke wide uppercase" id="contact-form-message" type="submit" value="Send" data-text-fail="Error, sorry" data-text-success="Done. Thanks!" data-text-send="Send"/>
+    {% elsif page.lang == 'ru' %}<input class="button stroke wide uppercase" id="contact-form-message" type="submit" value="Send" data-text-fail="Простите, ошибка" data-text-success="Отправлено!" data-text-send="Отправить"/>
+    {% else %}<input class="button stroke wide uppercase" id="contact-form-message" type="submit" value="Send" data-text-fail="שגיאה, סליחה" data-text-success="נשלח. תודה!" data-text-send="לשלוח"/>
+    {% endif %}
+
+
+</form>

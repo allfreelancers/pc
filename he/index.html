@@ -98,17 +98,7 @@ lang: he
                     <div class="box-contact card-main-mob ae-5">
                         <div class="grid right" dir="rtl">
                             <div class="col-7-12">
-                                <form action="#" autocomplete="off" class="wide">
-                                    <input class="wide" id="name" type="text" name="name" placeholder="שם"
-                                           required/>
-                                    <input class="wide" id="email" type="email" name="email" placeholder="אימייל"
-                                           required/>
-                                    <textarea class="stroke" id="message" type="text" name="message"
-                                              placeholder="ההודעה שלך"
-                                              maxlength="1000" rows="10" required></textarea>
-                                    <input class="button stroke wide uppercase" type="submit" name="submit"
-                                           value="לשלוח"/>
-                                </form>
+                                {% include contact_form.html %}
                             </div>
                             <div class="col-5-12 box-contact-address">
                                 <p>{{site.address-he}}

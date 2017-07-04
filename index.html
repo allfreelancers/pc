@@ -25,8 +25,8 @@ lang: en
                     <div class="ae-6 fromBottom">
 
                         <ul class="grid later grid-ladder equal">
-                            {% assign sorted_pages = (site.pages | where: 'layout', 'page' | where: 'lang', page.lang | sort:
-                            'position') %}
+                            {% assign sorted_pages = (site.pages | where: 'layout', 'page' | where: 'lang', page.lang |
+                            sort: 'position') %}
                             {% for item in sorted_pages %}
                             <li class="col-4-12">
                                 <a href="{{item.url}}" class="box-79 equalElement">
@@ -102,16 +102,7 @@ lang: en
                     <div class="box-contact card-main-mob ae-5">
                         <div class="grid left">
                             <div class="col-7-12">
-                                <form action="#" autocomplete="off" class="wide">
-                                    <input class="wide" id="name" type="text" name="name" placeholder="Name" required/>
-                                    <input class="wide" id="email" type="email" name="email" placeholder="Email"
-                                           required/>
-                                    <textarea class="stroke" id="message" type="text" name="message"
-                                              placeholder="Message"
-                                              maxlength="1000" rows="10" required></textarea>
-                                    <input class="button stroke wide uppercase" type="submit" name="submit"
-                                           value="Send"/>
-                                </form>
+                                {% include contact_form.html %}
                             </div>
                             <div class="col-5-12 box-contact-address">
                                 <p>{{site.address}}
@@ -128,7 +119,6 @@ lang: en
     </div>
     <div class="background background-bottom"></div>
 </section>
-
 
 <!-- Client Description Sidebar -->
 {% include clients_sidebar.html %}

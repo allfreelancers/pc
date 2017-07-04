@@ -114,18 +114,17 @@ body.slides {
   }
 }
 
-
 .background.background-top {
   background: url("../img/bg-top.svg") no-repeat;
   background-position: 55% 100%;
 
   &.background-rtl {
-      -moz-transform: scaleX(-1);
-      -o-transform: scaleX(-1);
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-      filter: FlipH;
-      -ms-filter: "FlipH";
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
   }
 
 }
@@ -224,13 +223,13 @@ body.slides {
 }
 
 .grid-68 {
-  @media screen and (min-width: 1024px) {
-    img {
-      margin-top: 0;
-      margin-bottom: 0;
+  img {
+    margin-top: 0;
+    margin-bottom: 0;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
     }
   }
-
 }
 
 .card-main {
@@ -275,6 +274,7 @@ body.slides {
   margin-left: 20px;
   margin-bottom: 15px;
 }
+
 .list-rtl .card-main li {
   margin-left: 0;
   margin-right: 20px;
@@ -352,8 +352,23 @@ body.slides {
   opacity: 1;
 }
 
+/* Forms */
+input.button.contact-form-success {
+  background-color: green !important;
+  color: $white !important;
+  border-color: green !important;
+  pointer-events: none;
+}
+
+input.button.contact-form-fail {
+  @extend input.button.contact-form-success;
+  background-color: red !important;
+  border-color: red !important;
+  color: $white !important;
+}
+
 /* Direction */
 
 .rtl {
-    direction: rtl !important;
+  direction: rtl !important;
 }
