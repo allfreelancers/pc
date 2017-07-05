@@ -3,28 +3,25 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes"/>
 
-
+    <title>{% if page.title and page.title != 'About text' %}{{ page.title | strip_html | normalize_whitespace }}.
+        {{site.title | strip_html | normalize_whitespace}}{% else %}{{ site.title | strip_html | normalize_whitespace
+        }}{% endif %}</title>
     <meta name="description" content="{{ site.description | strip_html | normalize_whitespace }}">
 
+    <meta property="og:type" content="website">
     <meta property="og:title" content="{% if page.title and page.title != 'About text' %}{{ page.title | strip_html | normalize_whitespace }}.
         {{site.title | strip_html | normalize_whitespace}}{% else %}{{ site.title | strip_html | normalize_whitespace
         }}{% endif %}">
     <meta property="og:description" content="Public Relations & Media Marketing Solutions">
     <meta property="og:image" content="https://paretocapital.net/sharing_thumb.png">
     <meta property="og:url" content="https://paretocapital.net">
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="{% if page.title and page.title != 'About text' %}{{ page.title | strip_html | normalize_whitespace }}.
-        {{site.title | strip_html | normalize_whitespace}}{% else %}{{ site.title | strip_html | normalize_whitespace
-        }}{% endif %}" />
-    <meta name="twitter:site" content="@paretocapital" />
-    <meta name="twitter:description" content="Public Relations & Media Marketing Solutions" />
-    <meta name="twitter:image" content="https://paretocapital.net/sharing_thumb.png" />
 
-    <title>{% if page.title and page.title != 'About text' %}{{ page.title | strip_html | normalize_whitespace }}.
-        {{site.title | strip_html | normalize_whitespace}}{% else %}{{ site.title | strip_html | normalize_whitespace
-        }}{% endif %}</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ffffff">
 
-    <link rel="icon" href="{{site.url}}{{site.baseurl}}/favicon.ico">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | strip_html }}"
           href="{{site.url}}{{site.baseurl}}/feed.xml">
