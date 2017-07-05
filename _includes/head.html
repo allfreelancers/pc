@@ -6,11 +6,19 @@
 
     <meta name="description" content="{{ site.description | strip_html | normalize_whitespace }}">
 
+    <meta property="og:title" content="{% if page.title and page.title != 'About text' %}{{ page.title | strip_html | normalize_whitespace }}.
+        {{site.title | strip_html | normalize_whitespace}}{% else %}{{ site.title | strip_html | normalize_whitespace
+        }}{% endif %}">
+    <meta property="og:description" content="Public Relations & Media Marketing Solutions">
+    <meta property="og:image" content="sharing_thumb.png">
+    <meta property="og:url" content="//paretocapital.net">
+    <meta name="twitter:card" content="sharing_thumb.png">
+
     <title>{% if page.title and page.title != 'About text' %}{{ page.title | strip_html | normalize_whitespace }}.
         {{site.title | strip_html | normalize_whitespace}}{% else %}{{ site.title | strip_html | normalize_whitespace
         }}{% endif %}</title>
 
-    <link rel="icon" href="{{site.url}}{{site.baseurl}}/img/favicon.ico">
+    <link rel="icon" href="{{site.url}}{{site.baseurl}}/favicon.ico">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | strip_html }}"
           href="{{site.url}}{{site.baseurl}}/feed.xml">
